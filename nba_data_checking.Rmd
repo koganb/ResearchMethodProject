@@ -1,0 +1,56 @@
+---
+title: "NBA plays stats"
+author: "Boris"
+date: "May 4, 2016"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+
+```{r}
+library(dplyr)
+library(pystr)
+```
+
+
+Check the number of games in season (82 in regular; 66 in 2011-2012)
+```{r}
+
+games <- read.csv("C:/Courses/NBA_python/espn-nba-scrapy/data/games.csv", header=T)
+home_games <- games %>%  group_by_('HOME_TEAM', 'PLAY_SEASON') %>% summarise(HOME_GAMES =n())
+visit_games <- games %>%  group_by_('VISIT_TEAM', 'PLAY_SEASON') %>% summarise(VISIT_GAMES =n())
+colnames(home_games)[1] <- "TEAM"
+colnames(visit_games)[1] <- "TEAM"
+total_games <- merge(x = home_games, y = visit_games, by = c("TEAM", "PLAY_SEASON"), all = TRUE)
+total_games$TOTAL_GAMES<- total_games$HOME_GAMES  + total_games$VISIT_GAMES
+head(total_games)
+```
+
+compare between home and visit games (sould be equal)
+one game boston vs indiana was canceled
+```{r}
+total_games %>% filter(HOME_GAMES != VISIT_GAMES)
+```
+
+
+Check that number of games points from games.csv and players.csv are equal - we got 3 rows out of 150000 that do not correspond
+
+```{r}
+players <- read.csv("C:/Courses/NBA_python/espn-nba-scrapy/data/players.csv", header=T)
+p_points_per_game <- players %>% filter(pystr_isnumeric(as.character(PTS))) %>% mutate(PTS =  as.numeric(as.character(PTS))) %>% group_by_('GAME_ID', 'TEAM') %>% summarise(SCORE_FROM_PLAYERS=sum(PTS))
+
+g_points_per_game1 <- games %>% select(GAME_ID, TEAM=HOME_TEAM, SCORE_FROM_GAMES=HOME_TEAM_SCORE) 
+g_points_per_game2 <- games %>% select(GAME_ID, TEAM=VISIT_TEAM, SCORE_FROM_GAMES=VISIT_TEAM_SCORE) 
+g_points_per_game <- rbind(g_points_per_game1, g_points_per_game2)
+
+games_players_score_cmp <- merge(x = p_points_per_game, y = g_points_per_game, by = c("GAME_ID", "TEAM"), all = TRUE)
+head(games_players_score_cmp)
+
+games_players_score_cmp %>% filter(SCORE_FROM_PLAYERS != SCORE_FROM_GAMES)
+
+
+```
