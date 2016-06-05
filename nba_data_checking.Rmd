@@ -52,5 +52,29 @@ head(games_players_score_cmp)
 
 games_players_score_cmp %>% filter(SCORE_FROM_PLAYERS != SCORE_FROM_GAMES)
 
+```
+
+```{r}
+
+player_stats <- read.csv("C:/Courses/NBA_python/espn-nba-scrapy/data/player_stat.csv", header=T)
+
+#get PLAY_SEASON, TEAM, NAME by joining players and games
+season_players <- merge(x = games %>%select(GAME_ID, PLAY_SEASON), y=players %>%select(GAME_ID, TEAM, NAME, ID)) %>% group_by_('PLAY_SEASON', 'TEAM', 'NAME', 'ID') %>% summarise 
+
+#merge with players_stats
+players_stats_cmp <- merge(x = season_players, y = player_stats, by = c("TEAM", "PLAY_SEASON", "ID"), all = TRUE)
+
+#overall players number
+nrow(players_stats_cmp)
+
+
+#number of players with PER
+nrow(players_stats_cmp %>% filter(is.na(PER)))
+
+#number of palyer without PER
+nrow(players_stats_cmp %>% filter(!is.na(PER)))
+
+#number of players without stats
+nrow(players_stats_cmp %>% filter(is.na(GP)))
 
 ```
