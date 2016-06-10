@@ -15,7 +15,7 @@ summary(model)
 cor(games.stats[,6:dim(games.stats)[2]])
 
 #a. Simple linear regression
-feature.names <- names(games.stats)[c(7:14, 16:22)]
+feature.names <- names(games.stats)[c(7:14, 16:26)]
 fml <- as.formula(paste('game_diff',"~",paste(feature.names,collapse="+")))
 lm.model <- lm(formula = fml, data = games.stats)
 summary(lm.model)
@@ -38,24 +38,5 @@ roc.obj <- roc(response = games.stats$Is_Winner, predictor = predict(object = mo
 roc.plot <- plot.roc(roc.obj)
 auc(response = games.stats$Is_Winner, predictor = predict(object = model, newdata = games.stats))
 
-#d. features importance, based regression
-library(mlbench)
-library(caret)
-
-set.seed(7) # ensure results are repeatable
-control <- trainControl(method="repeatedcv", number=10, repeats=3)  # prepare training scheme
-feature.names <- names(games.stats)[c(7:14, 16:22)]
-model <- train(game_diff~., data = games.stats[,c('game_diff',feature.names)], method = "glmnet", preProcess = "scale", trControl=control)
-# estimate variable importance
-importance <- varImp(model, scale=FALSE)
-print(importance)
-plot(importance)
-
-#just changing the method to be somthing differnet
-model <- train(game_diff~., data = games.stats[,c('game_diff',feature.names)], method = "rf", preProcess = "scale", trControl=control)
-# estimate variable importance
-importance <- varImp(model, scale=FALSE)
-print(importance)
-plot(importance)
-
-
+#d. using the evaluation function
+evalRegressionFunction(basic.features = c('steals', 'blocks'), added.feature = 'assists', target = 'game_diff', data = games.stats)
