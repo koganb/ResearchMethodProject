@@ -51,7 +51,7 @@ createPlayersStats <- function(players.path, games.path){
   games <- read.csv(file = games.path, header = TRUE)
   
   ##convert the name of the +- column, it didn't wasn't imported as needed
-  names(players) <- c(names(players)[1:17], "PLUS_MINUS", "PTS")
+  names(players) <- names(plyr::rename(players, c("X..."="PLUS_MINUS")))
   ##cleaning cases where players didn't play the whole game
   players.cleaned <- players[!is.na(as.numeric(as.character(players$MIN))),]
   
@@ -107,7 +107,7 @@ createTeamsStats <- function(players.path, games.path){
   games <- read.csv(file = games.path, header = TRUE)
   
   ##convert the name of the +- column, it didn't wasn't imported as needed
-  names(players) <- c(names(players)[1:17], "PLUS_MINUS", "PTS")
+  names(players) <- names(plyr::rename(players, c("X..."="PLUS_MINUS")))
   ##cleaning cases where players didn't play the whole game
   players.cleaned <- players[!is.na(as.numeric(as.character(players$MIN))),]
   
@@ -167,8 +167,8 @@ createTeamsStats <- function(players.path, games.path){
 }
 ####################### Functions usage #####################
 #functions call:
-games.path <- "C:/Users/abrahami/Documents/Private/Uni/BGU/research_methods/analysis_and_models/games.csv"
-players.path <- "C:/Users/abrahami/Documents/Private/Uni/BGU/research_methods/analysis_and_models/players.csv"
+games.path <- "games.csv"
+players.path <- "players.csv"
 target.table <- createTarget(path = games.path)
 players.stats <- createPlayersStats(players.path = players.path, games.path = games.path)
 team.stats <- createTeamsStats(players.path = players.path, games.path = games.path)

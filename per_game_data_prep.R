@@ -8,14 +8,15 @@ library(mlbench)
 library(caret)
 
 createGameStats <- function(players.path, games.path){
-  games.path <- "C:/Users/abrahami/Documents/Private/Uni/BGU/research_methods/analysis_and_models/games.csv"
-  players.path <- "C:/Users/abrahami/Documents/Private/Uni/BGU/research_methods/analysis_and_models/players.csv"
+  games.path <- "games.csv"
+  players.path <- "players.csv"
   
   players <- read.csv(file = players.path,header = TRUE)
   games <- read.csv(file = games.path, header = TRUE)
   
   ##convert the name of the +- column, it didn't wasn't imported as needed
-  names(players) <- c(names(players)[1:17], "PLUS_MINUS", "PTS")
+  names(players) <- names(plyr::rename(players, c("X..."="PLUS_MINUS")))
+
   ##cleaning cases where players didn't play the whole game
   players.cleaned <- players[!is.na(as.numeric(as.character(players$MIN))),]
   
@@ -101,8 +102,8 @@ evalRegressionFunction <- function(basic.features, added.feature,target, data){
 
 ####################### Function usage #####################
 #functions call:
-games.path <- "C:/Users/abrahami/Documents/Private/Uni/BGU/research_methods/analysis_and_models/games.csv"
-players.path <- "C:/Users/abrahami/Documents/Private/Uni/BGU/research_methods/analysis_and_models/players.csv"
+games.path <- "games.csv"
+players.path <- "players.csv"
 games.stats <- createGameStats(players.path = players.path, games.path = games.path)
 
 #now we are moving to the modeling file... all models are there
