@@ -1,0 +1,31 @@
+NAME,DIVISION,PREFIX_1,PREFIX_2
+Boston Celtics,Atlantic,bos,boston-celtics
+Brooklyn Nets,Atlantic,bkn,brooklyn-nets
+New York Knicks,Atlantic,ny,new-york-knicks
+Philadelphia 76ers,Atlantic,phi,philadelphia-76ers
+Toronto Raptors,Atlantic,tor,toronto-raptors
+Golden State Warriors,Pacific,gs,golden-state-warriors
+Los Angeles Clippers,Pacific,lac,los-angeles-clippers
+Los Angeles Lakers,Pacific,lal,los-angeles-lakers
+Phoenix Suns,Pacific,phx,phoenix-suns
+Sacramento Kings,Pacific,sac,sacramento-kings
+Chicago Bulls,Central,chi,chicago-bulls
+Cleveland Cavaliers,Central,cle,cleveland-cavaliers
+Detroit Pistons,Central,det,detroit-pistons
+Indiana Pacers,Central,ind,indiana-pacers
+Milwaukee Bucks,Central,mil,milwaukee-bucks
+Dallas Mavericks,Southwest,dal,dallas-mavericks
+Houston Rockets,Southwest,hou,houston-rockets
+Memphis Grizzlies,Southwest,mem,memphis-grizzlies
+New Orleans Pelicans,Southwest,no,new-orleans-pelicans
+San Antonio Spurs,Southwest,sa,san-antonio-spurs
+Atlanta Hawks,Southeast,atl,atlanta-hawks
+Charlotte Hornets,Southeast,cha,charlotte-hornets
+Miami Heat,Southeast,mia,miami-heat
+Orlando Magic,Southeast,orl,orlando-magic
+Washington Wizards,Southeast,wsh,washington-wizards
+Denver Nuggets,Northwest,den,denver-nuggets
+Minnesota Timberwolves,Northwest,min,minnesota-timberwolves
+Oklahoma City Thunder,Northwest,okc,oklahoma-city-thunder
+Portland Trail Blazers,Northwest,por,portland-trail-blazers
+Utah Jazz,Northwest,utah,utah-jazz

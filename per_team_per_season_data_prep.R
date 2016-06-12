@@ -5,8 +5,12 @@ if(require("dplyr") == FALSE) install.packages("dplyr")
 library(dplyr)
 
 ################################## games - creating the y features
-createTarget <- function(path){
-  games <- read.csv(file = path, header = TRUE)
+
+
+source("data_preparation.R")
+
+
+createTarget <- function(games){
   home.games.query <- "SELECT PLAY_SEASON, HOME_TEAM AS TEAM, count(1) AS home_games,
                       sum(case when HOME_TEAM_SCORE > VISIT_TEAM_SCORE then 1 else 0 end) AS home_wins,
                       AVG(HOME_TEAM_SCORE-VISIT_TEAM_SCORE) avg_diff
@@ -46,44 +50,7 @@ createTarget <- function(path){
 #################### players data - creating the players stats ##############################
 createPlayersStats <- function(players.path, games.path){
   
-  #loading the two relevant talbes
-  players <- read.csv(file = players.path,header = TRUE)
-  games <- read.csv(file = games.path, header = TRUE)
-  
-  ##convert the name of the +- column, it didn't wasn't imported as needed
-  names(players) <- names(plyr::rename(players, c("X..."="PLUS_MINUS")))
-  ##cleaning cases where players didn't play the whole game
-  suppressWarnings(players.cleaned <- players[!is.na(as.numeric(as.character(players$MIN))),])
-  
-  ##cleaning cases where players played less than 2 min in a game
-  players.cleaned <- players.cleaned[which(as.numeric(as.character(players.cleaned$MIN)) >2),]
-  
-  
-  #preparing all features for modeling - starting with the simple ones (just convert to numeric)
-  players.cleaned$MIN <- as.numeric(as.character(players.cleaned$MIN))
-  players.cleaned$OREB <- as.numeric(as.character(players.cleaned$OREB))
-  players.cleaned$DREB <- as.numeric(as.character(players.cleaned$DREB))
-  players.cleaned$REB <- as.numeric(as.character(players.cleaned$REB))
-  players.cleaned$AST <- as.numeric(as.character(players.cleaned$AST))
-  players.cleaned$STL <- as.numeric(as.character(players.cleaned$STL))
-  players.cleaned$BLK <- as.numeric(as.character(players.cleaned$BLK))
-  players.cleaned$TO <- as.numeric(as.character(players.cleaned$TO))
-  players.cleaned$PF <- as.numeric(as.character(players.cleaned$PF))
-  players.cleaned$PLUS_MINUS <- as.numeric(as.character(players.cleaned$PLUS_MINUS))
-  players.cleaned$PTS <- as.numeric(as.character(players.cleaned$PTS))
-  
-  #now the ones we have to convert to meaningful ones
-  FG.splitted <- unlist(strsplit(as.character(players.cleaned$FG), split = "-"))
-  players.cleaned$good_shots <- as.numeric(FG.splitted[c(TRUE, FALSE)])
-  players.cleaned$shots <- as.numeric(FG.splitted[c(FALSE, TRUE)])
-  
-  X3PT.splitted <- unlist(strsplit(as.character(players.cleaned$X3PT), split = "-"))
-  players.cleaned$good_3_points <- as.numeric(X3PT.splitted[c(TRUE, FALSE)])
-  players.cleaned$three_points_shots <- as.numeric(X3PT.splitted[c(FALSE, TRUE)])
-  
-  FT.splitted <- unlist(strsplit(as.character(players.cleaned$FT), split = "-"))
-  players.cleaned$good_FT_points <- as.numeric(FT.splitted[c(TRUE, FALSE)])
-  players.cleaned$FT_shots <- as.numeric(FT.splitted[c(FALSE, TRUE)])
+  players.cleaned <- preparePlayersDataSet(players)
   
   #only a small subsets of statistics per player - we can make much more if wanted...
   players.stats.query <-  "SELECT g.PLAY_SEASON, p.TEAM, p.NAME,count(1) AS games, avg(p.MIN) AS avg_minutes,
@@ -100,46 +67,10 @@ createPlayersStats <- function(players.path, games.path){
 
 
 #################### teams data - creating the teams stats ##############################
-createTeamsStats <- function(players.path, games.path){
+createTeamsStats <- function(players, games){
   
-  #loading the two relevant talbes
-  players <- read.csv(file = players.path,header = TRUE)
-  games <- read.csv(file = games.path, header = TRUE)
+  players.cleaned <- preparePlayersDataSet(players)
   
-  ##convert the name of the +- column, it didn't wasn't imported as needed
-  names(players) <- names(plyr::rename(players, c("X..."="PLUS_MINUS")))
-  ##cleaning cases where players didn't play the whole game
-  suppressWarnings(players.cleaned <- players[!is.na(as.numeric(as.character(players$MIN))),])
-  
-  ##cleaning cases where players played less than 2 min in a game
-  players.cleaned <- players.cleaned[which(as.numeric(as.character(players.cleaned$MIN)) >2),]
-  
-  
-  #preparing all features for modeling - starting with the simple ones (just convert to numeric)
-  players.cleaned$MIN <- as.numeric(as.character(players.cleaned$MIN))
-  players.cleaned$OREB <- as.numeric(as.character(players.cleaned$OREB))
-  players.cleaned$DREB <- as.numeric(as.character(players.cleaned$DREB))
-  players.cleaned$REB <- as.numeric(as.character(players.cleaned$REB))
-  players.cleaned$AST <- as.numeric(as.character(players.cleaned$AST))
-  players.cleaned$STL <- as.numeric(as.character(players.cleaned$STL))
-  players.cleaned$BLK <- as.numeric(as.character(players.cleaned$BLK))
-  players.cleaned$TO <- as.numeric(as.character(players.cleaned$TO))
-  players.cleaned$PF <- as.numeric(as.character(players.cleaned$PF))
-  players.cleaned$PLUS_MINUS <- as.numeric(as.character(players.cleaned$PLUS_MINUS))
-  players.cleaned$PTS <- as.numeric(as.character(players.cleaned$PTS))
-  
-  #now the ones we have to convert to meaningful ones
-  FG.splitted <- unlist(strsplit(as.character(players.cleaned$FG), split = "-"))
-  players.cleaned$good_shots <- as.numeric(FG.splitted[c(TRUE, FALSE)])
-  players.cleaned$shots <- as.numeric(FG.splitted[c(FALSE, TRUE)])
-  
-  X3PT.splitted <- unlist(strsplit(as.character(players.cleaned$X3PT), split = "-"))
-  players.cleaned$good_3_points <- as.numeric(X3PT.splitted[c(TRUE, FALSE)])
-  players.cleaned$three_points_shots <- as.numeric(X3PT.splitted[c(FALSE, TRUE)])
-  
-  FT.splitted <- unlist(strsplit(as.character(players.cleaned$FT), split = "-"))
-  players.cleaned$good_FT_points <- as.numeric(FT.splitted[c(TRUE, FALSE)])
-  players.cleaned$FT_shots <- as.numeric(FT.splitted[c(FALSE, TRUE)])
   
   teams.stats.query <-  "SELECT g.PLAY_SEASON, p.TEAM, count(distinct p.GAME_ID) AS games,
                           sum(p.OREB)/count(distinct p.GAME_ID) AS avg_o_rebounds,
@@ -167,11 +98,13 @@ createTeamsStats <- function(players.path, games.path){
 }
 ####################### Functions usage #####################
 #functions call:
-games.path <- "games.csv"
-players.path <- "players.csv"
-target.table <- createTarget(path = games.path)
-players.stats <- createPlayersStats(players.path = players.path, games.path = games.path)
-team.stats <- createTeamsStats(players.path = players.path, games.path = games.path)
+players <- read.csv(file = "data/players.csv", header = TRUE, stringsAsFactors=F)
+games <- read.csv(file = "data/games.csv", header = TRUE, stringsAsFactors=F)
+
+target.table <- createTarget(games)
+
+players.stats <- createPlayersStats(players, games)
+team.stats <- createTeamsStats(players, games)
 
 head(target.table)
 head(players.stats)
