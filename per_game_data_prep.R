@@ -18,7 +18,7 @@ createGameStats <- function(players.path, games.path){
   names(players) <- names(plyr::rename(players, c("X..."="PLUS_MINUS")))
 
   ##cleaning cases where players didn't play the whole game
-  players.cleaned <- players[!is.na(as.numeric(as.character(players$MIN))),]
+  suppressWarnings(players.cleaned <- players[!is.na(as.numeric(as.character(players$MIN))),])
   
   ##cleaning cases where players played less than 2 min in a game
   players.cleaned <- players.cleaned[which(as.numeric(as.character(players.cleaned$MIN)) >2),]
