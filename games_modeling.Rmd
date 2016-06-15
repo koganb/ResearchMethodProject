@@ -1,0 +1,72 @@
+---
+title: "games_modeling"
+author: "Boris"
+date: "June 14, 2016"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(out.width='1300px', dpi=200)
+```
+
+
+```{r, cache=TRUE, warning=FALSE, message=FALSE}
+source('per_game_data_prep.R')
+players <- read.csv(file = "data/players.csv", header = TRUE, stringsAsFactors=F)
+games <- read.csv(file = "data/games.csv", header = TRUE, stringsAsFactors=F)
+teams <- read.csv(file = "data/teams.csv", header=TRUE, stringsAsFactors = F)
+games.stats <- createGameStats(players, games)
+
+```
+
+You can also embed plots, for example:
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+source('games_modeling.R')
+team_names <- teams$PREFIX_2
+
+graphs = list()
+i<-1
+for (team_name in team_names) {
+  model_features_table = data.frame()
+  most_influent_features= c()
+  
+  for (season in c('2011/2012','2012/2013','2013/2014','2014/2015','2015/2016')){
+    win_perc <- getWinPercentage(games.stats, team_name, season)
+    features_table <- getFeatureInfluence(games.stats, team_name, season)
+    features_table$season_cap <- c(paste0(season, "(", win_perc, "%)")) 
+    
+    model_features_table <- rbind(model_features_table, features_table)
+    
+    most_influent_features <- unique(c(most_influent_features,mostInfluentFeatures(model_features_table,5)))
+    
+  }
+  
+  most_features_table <- model_features_table %>% dplyr::filter(features %in% most_influent_features)
+  
+  g <- ggplot(data=most_features_table, aes(x=season_cap, y=variance_diff, fill=features)) +
+    geom_bar(stat="identity", position=position_dodge(),  width=0.5)
+  
+  g <- g+theme(
+          text = element_text(size=7),
+          axis.title=element_text(size=10,face="bold")
+          )+
+        xlab("Season and win percentage") +
+        ylab("Percentage of variance explained") +
+        ggtitle(team_name)
+
+    graphs[[i]] <- g #add graph to list
+    i <- i + 1
+
+}
+
+multiplot(graphs, ncol=1)
+
+
+
+```

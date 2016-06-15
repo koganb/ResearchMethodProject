@@ -27,16 +27,16 @@ stepwise.model <- step(starting.model, scope=(~ .), steps = 15, direction = "bot
 
 #c. logistic regression
 if(require("pROC") == FALSE) install.packages("pROC")
-library(pROC)
+library(pROC)ewdata = games.stats))
+roc.plot <- plot.roc(roc.obj)
+auc(response = games.stats$Is_Winner, predictor = predict(object = model, newdata = game
 games.stats$Is_Winner <- as.factor(games.stats$Is_Winner)
 feature.names <- names(games.stats)[c(7:14, 16:22)]
 fml <- as.formula(paste('Is_Winner',"~",paste(feature.names,collapse="+")))
 model <- glm(formula = fml, data = games.stats, family = 'binomial')
 summary(model)
 #roc curve
-roc.obj <- roc(response = games.stats$Is_Winner, predictor = predict(object = model, newdata = games.stats))
-roc.plot <- plot.roc(roc.obj)
-auc(response = games.stats$Is_Winner, predictor = predict(object = model, newdata = games.stats))
+roc.obj <- roc(response = games.stats$Is_Winner, predictor = predict(object = model, ns.stats))
 
 #d. using the evaluation function
 evalRegressionFunction(basic.features = c('steals', 'blocks'), added.feature = 'assists', target = 'game_diff', data = games.stats)

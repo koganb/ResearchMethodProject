@@ -1,7 +1,7 @@
 
-if(require("splitstackshape") == FALSE) install.packages("splitstackshape")
-library(splitstackshape)
-if(require("dplyr") == FALSE) install.packages("dplyr")
+if(require(" tidyr") == FALSE) install.packages(" tidyr", repos = "http://cran.us.r-project.org")
+library( tidyr)
+if(require("dplyr") == FALSE) install.packages("dplyr", repos = "http://cran.us.r-project.org")
 library(dplyr)
 
 

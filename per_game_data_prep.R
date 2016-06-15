@@ -1,7 +1,7 @@
-if(require("sqldf") == FALSE) install.packages("sqldf")
+if(require("sqldf") == FALSE) install.packages("sqldf", repos = "http://cran.us.r-project.org")
 library(sqldf)
 
-if(require("dplyr") == FALSE) install.packages("dplyr")
+if(require("dplyr") == FALSE) install.packages("dplyr", repos = "http://cran.us.r-project.org")
 library(dplyr)
 
 library(mlbench)
