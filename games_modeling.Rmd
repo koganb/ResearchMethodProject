@@ -50,11 +50,11 @@ for (team_name in team_names) {
   most_features_table <- model_features_table %>% dplyr::filter(features %in% most_influent_features)
   
   g <- ggplot(data=most_features_table, aes(x=season_cap, y=variance_diff, fill=features)) +
-    geom_bar(stat="identity", position=position_dodge(),  width=0.5)
+    geom_bar(stat="identity", position=position_dodge(),  width=0.8)
   
   g <- g+theme(
-          text = element_text(size=7),
-          axis.title=element_text(size=10,face="bold")
+          text = element_text(size=12),
+          axis.title=element_text(size=14,face="bold")
           )+
         xlab("Season and win percentage") +
         ylab("Percentage of variance explained") +
