@@ -64,6 +64,8 @@ createGameStats <- function(players, games){
                             sum(p.good_3_points)/sum(p.three_points_shots) AS three_shots_perc,
                             sum(p.good_FT_points)/sum(p.FT_shots) AS FT_perc,
                             STDEV(p.PTS) AS points_std,
+                            STDEV(p.MIN) AS minutes_std,
+                            count(distinct NAME) AS Players_counter,
                             
                             sum(p.OREB)/avg(s.o_rebounds_avg) AS o_rebounds_relative,
                             sum(p.DREB)/avg(s.d_rebounds_avg) AS d_rebounds_relative,

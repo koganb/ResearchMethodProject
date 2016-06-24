@@ -32,13 +32,18 @@ team_names <- teams$PREFIX_2
 
 graphs = list()
 i<-1
+model.features <- c("o_rebounds","d_rebounds","assists","steals","blocks","turnovers","fouls","shots_perc","three_shots_perc","FT_perc",
+                    "shots", "three_points_shots", "FT_shots", "points_std", "minutes_std", "Players_counter",
+                    "o_rebounds_relative", "d_rebounds_relative", "assists_relative", "steals_relative", "blocks_relative", "turnovers_relative",
+                    "fouls_relative", "shots_relative", "three_points_shots_relative", "FT_shots_relative",
+                    "shots_perc_relative", "three_shots_perc_relative", "FT_perc_relative")
 for (team_name in team_names) {
   model_features_table = data.frame()
   most_influent_features= c()
   
   for (season in c('2011/2012','2012/2013','2013/2014','2014/2015','2015/2016')){
     win_perc <- getWinPercentage(games.stats, team_name, season)
-    features_table <- getFeatureInfluence(games.stats, team_name, season)
+    features_table <- getFeatureInfluence(games.stats = games.stats, team = team_name, season = season, model.features = model.features, features.subset.size = 5)
     features_table$season_cap <- c(paste0(season, "(", win_perc, "%)")) 
     
     model_features_table <- rbind(model_features_table, features_table)
@@ -49,7 +54,7 @@ for (team_name in team_names) {
   
   most_features_table <- model_features_table %>% dplyr::filter(features %in% most_influent_features)
   
-  g <- ggplot(data=most_features_table, aes(x=season_cap, y=variance_diff, fill=features)) +
+  g <- ggplot(data=most_features_table, aes(x=season_cap, y=variance.diff, fill=features)) +
     geom_bar(stat="identity", position=position_dodge(),  width=0.8)
   
   g <- g+theme(
