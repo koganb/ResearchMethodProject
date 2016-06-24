@@ -37,6 +37,11 @@ model.features <- c("o_rebounds","d_rebounds","assists","steals","blocks","turno
                     "o_rebounds_relative", "d_rebounds_relative", "assists_relative", "steals_relative", "blocks_relative", "turnovers_relative",
                     "fouls_relative", "shots_relative", "three_points_shots_relative", "FT_shots_relative",
                     "shots_perc_relative", "three_shots_perc_relative", "FT_perc_relative")
+evaluation.measures.table <- data.frame(Team = character(),
+                                       Season = character(),
+                                       AUC = double(),
+                                       Accuracy = double(),
+                                       stringsAsFactors=FALSE) 
 for (team_name in team_names) {
   model_features_table = data.frame()
   most_influent_features= c()
@@ -47,8 +52,11 @@ for (team_name in team_names) {
     features_table$season_cap <- c(paste0(season, "(", win_perc, "%)")) 
     
     model_features_table <- rbind(model_features_table, features_table)
-    
     most_influent_features <- unique(c(most_influent_features,mostInfluentFeatures(model_features_table,5)))
+    
+    #now we'll measure the predition ability and will save it to the big table
+    cur.measures <- getPredictionAbility(games.stats = games.stats, team = team_name, season = season, model.features = features_table$features)
+    evaluation.measures.table <- rbind(evaluation.measures.table, data.frame(Team = team_name, Season = season, AUC = cur.measures$auc, Accuracy = cur.measures$accuracy))
     
   }
   
@@ -65,13 +73,10 @@ for (team_name in team_names) {
         ylab("Percentage of variance explained") +
         ggtitle(team_name)
 
-    graphs[[i]] <- g #add graph to list
-    i <- i + 1
-
+  graphs[[i]] <- g #add graph to list
+  i <- i + 1
 }
 
 multiplot(graphs, ncol=1)
-
-
-
+evaluation.measures.table
 ```

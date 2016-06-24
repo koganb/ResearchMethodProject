@@ -2,6 +2,7 @@ library(pscl)
 library(gridExtra)
 library(dplyr)
 library(ggplot2)
+library(ROCR)
 
 
 
@@ -50,7 +51,7 @@ getWinPercentage <- function(games.stats, team, season) {
   return (round(
           nrow(games.stats[games.stats$TEAM == team & games.stats$PLAY_SEASON == season & games.stats$Is_Winner == 1,])/
           nrow(games.stats[games.stats$TEAM == team & games.stats$PLAY_SEASON == season,]),
-          2))
+          2)*100)
 }
 
 getFeatureInfluence <- function(games.stats, team, season, model.features, features.subset.size = 5) {
@@ -84,4 +85,21 @@ mostInfluentFeatures <- function(dataframe, features_num) {
   most_influent_features <- head(dataframe[order(-dataframe$variance.diff), , drop = FALSE],features_num)$features
   return (most_influent_features)
 }
+
+#returns some evaluation measure about our ability to predict results for a team in a season.
+#gets as input the big table of games ststs, the team, the season and the features to use for modeling
+#returns the AUC and the best accuracy we got, out of all possible thresholds. Done only on train, without any cross-validation
+getPredictionAbility <- function(games.stats, team, season, model.features){
+  cur.data <- games.stats[games.stats$TEAM == team & games.stats$PLAY_SEASON == season,]
+  glm.formula <- paste0("Is_Winner~",paste(model.features, collapse="+"))
+  model <- glm(formula = glm.formula, family = binomial(link='logit'), data = cur.data)
+  prob <- predict(object = model, newdata = cur.data, type="response")
+  pred <- prediction(prob, cur.data$Is_Winner)
+  auc <- performance(pred, measure = "auc")
+  auc <- auc@y.values[[1]]
+  accuracy <- (pred@tp[[1]]+pred@tn[[1]]) / (pred@n.pos[[1]] + pred@n.neg[[1]])
+  best.accuracy <- max(accuracy)
+  return(list(auc = auc, accuracy = best.accuracy))
+}
+
 
