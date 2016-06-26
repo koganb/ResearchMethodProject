@@ -99,7 +99,8 @@ getPredictionAbility <- function(games.stats, team, season, model.features){
   auc <- auc@y.values[[1]]
   accuracy <- (pred@tp[[1]]+pred@tn[[1]]) / (pred@n.pos[[1]] + pred@n.neg[[1]])
   best.accuracy <- max(accuracy)
-  return(list(auc = auc, accuracy = best.accuracy))
+  cross.validation <- cv.glm(data = cur.data, glmfit = model, K=10)
+  return(list(auc = auc, accuracy = best.accuracy, CV.accuracy = 1-cross.validation$delta[1]))
 }
 
 
@@ -147,16 +148,16 @@ percentage_without_na <- function (x) {
 # teams <- read.csv(file = "data/teams.csv", header=TRUE, stringsAsFactors = F)
 # games.stats <- createGameStats(players, games)
 
-most_influent_features_table <- mostInfluentFeaturesTable(games.stats, team_names = teams$PREFIX_2)
-most_influent_features_table_sorted <- most_influent_features_table[order(most_influent_features_table$win_perc),] 
+#most_influent_features_table <- mostInfluentFeaturesTable(games.stats, team_names = teams$PREFIX_2)
+#most_influent_features_table_sorted <- most_influent_features_table[order(most_influent_features_table$win_perc),] 
 
 
 
-best_seasons <- tail(most_influent_features_table_sorted, 20)
-worst_seasons <- head(most_influent_features_table_sorted, 20)
-worst_season_features <- t(data.frame(as.list(apply(worst_seasons, 2, percentage_without_na))))
-worst_season_features_ordered <- as.data.frame(worst_season_features[order(-worst_season_features[,1]), ])
-worst_season_features_ordered
+#best_seasons <- tail(most_influent_features_table_sorted, 20)
+#worst_seasons <- head(most_influent_features_table_sorted, 20)
+#worst_season_features <- t(data.frame(as.list(apply(worst_seasons, 2, percentage_without_na))))
+#worst_season_features_ordered <- as.data.frame(worst_season_features[order(-worst_season_features[,1]), ])
+#worst_season_features_ordered
 
 
 
