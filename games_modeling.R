@@ -103,3 +103,62 @@ getPredictionAbility <- function(games.stats, team, season, model.features){
 }
 
 
+model_features <- c("o_rebounds","d_rebounds","assists","steals","blocks","turnovers","fouls","shots_perc","three_shots_perc","FT_perc",
+                    "shots", "three_points_shots", "FT_shots", "points_std", "minutes_std", "Players_counter",
+                    "o_rebounds_relative", "d_rebounds_relative", "assists_relative", "steals_relative", "blocks_relative", "turnovers_relative",
+                    "fouls_relative", "shots_relative", "three_points_shots_relative", "FT_shots_relative",
+                    "shots_perc_relative", "three_shots_perc_relative", "FT_perc_relative")
+model_seasons <-  c('2011/2012','2012/2013','2013/2014', '2014/2015', '2015/2016')
+
+mostInfluentFeaturesTable <- function (games.stats, team_names, seasons=model_seasons, model.features=model_features, features.subset.size = length(model.features)) {
+  most_influent_features_table = data.frame()
+  
+  for (team_name in team_names) {
+
+    for (season in seasons){
+      win_perc <- getWinPercentage(games.stats, team_name, season)
+      features_table <- getFeatureInfluence(games.stats = games.stats, 
+                                            team = team_name, 
+                                            season = season, 
+                                            model.features = model.features, 
+                                            features.subset.size = 5)
+      
+      features_table <- as.data.frame(t(features_table),  stringsAsFactors = F)
+      features_table <- cbind(features_table, data.frame(x=c( win_perc/100, "win_perc"), stringsAsFactors = F))
+      colnames(features_table) <- features_table["features",]
+      features_table <- features_table[c(TRUE, FALSE),]
+      most_influent_features_table <- plyr::rbind.fill(most_influent_features_table, data.frame(as.list(apply(features_table, 2, as.numeric))))
+      
+      
+    }
+  }
+  return (most_influent_features_table)
+}
+
+
+
+percentage_without_na <- function (x) {
+  return(length(x[!is.na(x)]) / length(x))
+}
+
+# source('per_game_data_prep.R')
+# players <- read.csv(file = "data/players.csv", header = TRUE, stringsAsFactors=F)
+# games <- read.csv(file = "data/games.csv", header = TRUE, stringsAsFactors=F)
+# teams <- read.csv(file = "data/teams.csv", header=TRUE, stringsAsFactors = F)
+# games.stats <- createGameStats(players, games)
+
+most_influent_features_table <- mostInfluentFeaturesTable(games.stats, team_names = teams$PREFIX_2)
+most_influent_features_table_sorted <- most_influent_features_table[order(most_influent_features_table$win_perc),] 
+
+
+
+best_seasons <- tail(most_influent_features_table_sorted, 20)
+worst_seasons <- head(most_influent_features_table_sorted, 20)
+worst_season_features <- t(data.frame(as.list(apply(worst_seasons, 2, percentage_without_na))))
+worst_season_features_ordered <- as.data.frame(worst_season_features[order(-worst_season_features[,1]), ])
+worst_season_features_ordered
+
+
+
+
+
