@@ -78,5 +78,6 @@ for (team_name in team_names) {
 }
 
 multiplot(graphs, ncol=1)
+most_features_table
 evaluation.measures.table
 ```
