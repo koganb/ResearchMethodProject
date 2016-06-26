@@ -153,6 +153,10 @@ most_influent_features_table_sorted <- most_influent_features_table[order(most_i
 
 
 best_seasons <- tail(most_influent_features_table_sorted, 20)
+best_season_features <- t(data.frame(as.list(apply(best_seasons, 2, percentage_without_na))))
+best_season_features_ordered <- as.data.frame(best_season_features[order(-best_season_features[,1]), ])
+best_season_features_ordered
+
 worst_seasons <- head(most_influent_features_table_sorted, 20)
 worst_season_features <- t(data.frame(as.list(apply(worst_seasons, 2, percentage_without_na))))
 worst_season_features_ordered <- as.data.frame(worst_season_features[order(-worst_season_features[,1]), ])
