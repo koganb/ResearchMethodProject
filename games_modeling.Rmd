@@ -41,6 +41,8 @@ evaluation.measures.table <- data.frame(Team = character(),
                                        Season = character(),
                                        AUC = double(),
                                        Accuracy = double(),
+                                       CVAccuracy = double(),
+                                       baseline.improv = double(),
                                        stringsAsFactors=FALSE) 
 for (team_name in team_names) {
   model_features_table = data.frame()
@@ -56,7 +58,7 @@ for (team_name in team_names) {
     
     #now we'll measure the predition ability and will save it to the big table
     cur.measures <- getPredictionAbility(games.stats = games.stats, team = team_name, season = season, model.features = features_table$features)
-    evaluation.measures.table <- rbind(evaluation.measures.table, data.frame(Team = team_name, Season = season, AUC = cur.measures$auc, Accuracy = cur.measures$accuracy))
+    evaluation.measures.table <- rbind(evaluation.measures.table, data.frame(Team = team_name, Season = season, AUC = cur.measures$auc, Accuracy = cur.measures$accuracy, CVAccuracy = cur.measures$CV.accuracy, baseline.improv = cur.measures$CV.accuracy/max(win_perc/100, 1-(win_perc/100))-1))
     
   }
   
@@ -78,5 +80,6 @@ for (team_name in team_names) {
 }
 
 multiplot(graphs, ncol=1)
+most_features_table
 evaluation.measures.table
 ```
