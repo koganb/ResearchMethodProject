@@ -24,62 +24,62 @@ games.stats <- createGameStats(players, games)
 
 ```
 
-You can also embed plots, for example:
 
-```{r echo=FALSE, warning=FALSE, message=FALSE}
+Check the most influent features on the victory grouped by team and season 
+```{r , cache=TRUE, warning=FALSE, message=FALSE}
+library(ggplot2)
 source('games_modeling.R')
-team_names <- teams$PREFIX_2
+mostInfluentFeatures <- mostInfluentFeaturesTable(games.stats, team_names = teams$PREFIX_2)
 
-graphs = list()
-i<-1
-model.features <- c("o_rebounds","d_rebounds","assists","steals","blocks","turnovers","fouls","shots_perc","three_shots_perc","FT_perc",
-                    "shots", "three_points_shots", "FT_shots", "points_std", "minutes_std", "Players_counter",
-                    "o_rebounds_relative", "d_rebounds_relative", "assists_relative", "steals_relative", "blocks_relative", "turnovers_relative",
-                    "fouls_relative", "shots_relative", "three_points_shots_relative", "FT_shots_relative",
-                    "shots_perc_relative", "three_shots_perc_relative", "FT_perc_relative")
-evaluation.measures.table <- data.frame(Team = character(),
-                                       Season = character(),
-                                       AUC = double(),
-                                       Accuracy = double(),
-                                       CVAccuracy = double(),
-                                       baseline.improv = double(),
-                                       stringsAsFactors=FALSE) 
-for (team_name in team_names) {
-  model_features_table = data.frame()
-  most_influent_features= c()
-  
-  for (season in c('2011/2012','2012/2013','2013/2014','2014/2015','2015/2016')){
-    win_perc <- getWinPercentage(games.stats, team_name, season)
-    features_table <- getFeatureInfluence(games.stats = games.stats, team = team_name, season = season, model.features = model.features, features.subset.size = 5)
-    features_table$season_cap <- c(paste0(season, "(", win_perc, "%)")) 
-    
-    model_features_table <- rbind(model_features_table, features_table)
-    most_influent_features <- unique(c(most_influent_features,mostInfluentFeatures(model_features_table,5)))
-    
-    #now we'll measure the predition ability and will save it to the big table
-    cur.measures <- getPredictionAbility(games.stats = games.stats, team = team_name, season = season, model.features = features_table$features)
-    evaluation.measures.table <- rbind(evaluation.measures.table, data.frame(Team = team_name, Season = season, AUC = cur.measures$auc, Accuracy = cur.measures$accuracy, CVAccuracy = cur.measures$CV.accuracy, baseline.improv = cur.measures$CV.accuracy/max(win_perc/100, 1-(win_perc/100))-1))
-    
-  }
-  
-  most_features_table <- model_features_table %>% dplyr::filter(features %in% most_influent_features)
-  
-  g <- ggplot(data=most_features_table, aes(x=season_cap, y=variance.diff, fill=features)) +
-    geom_bar(stat="identity", position=position_dodge(),  width=0.8)
-  
-  g <- g+theme(
-          text = element_text(size=12),
-          axis.title=element_text(size=14,face="bold")
-          )+
-        xlab("Season and win percentage") +
-        ylab("Percentage of variance explained") +
-        ggtitle(team_name)
+mostInfluentFeaturesPers <- t(data.frame(as.list(apply(mostInfluentFeatures, 2, percentage_without_na))))
+mostInfluentFeaturesPersOrdered <- as.data.frame(mostInfluentFeaturesPers[order(-mostInfluentFeaturesPers[,1]), ])
 
-  graphs[[i]] <- g #add graph to list
-  i <- i + 1
-}
+colnames(mostInfluentFeaturesPersOrdered) <- c('count')
+mostInfluentFeaturesPersOrdered$feature <- rownames(mostInfluentFeaturesPersOrdered) 
 
-multiplot(graphs, ncol=1)
-most_features_table
-evaluation.measures.table
+mostInfluentFeaturesPersOrdered$feature <- factor(mostInfluentFeaturesPersOrdered$feature, levels = mostInfluentFeaturesPersOrdered$feature)
+
+
+mostInfluentFeaturesPersOrdered = mostInfluentFeaturesPersOrdered[-1,] #remove first row
+
+ggplot(mostInfluentFeaturesPersOrdered, aes( x = mostInfluentFeaturesPersOrdered$feature, 
+                                             y = mostInfluentFeaturesPersOrdered$count)) + 
+  geom_bar(stat = "identity" ) + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = -0.01,  size = 11), 
+        axis.title = element_text(size=12)) +
+  ylab("Percentage of seasons") +
+  xlab("") +
+  ggtitle("Most influent features by their relative percentage in seasons statistics")
+
 ```
+
+
+Create T-TEST for d_rebounds hosting vs opponent diff per team and season devided by winning state
+```{r , cache=FALSE, warning=FALSE, message=FALSE}
+source('games_modeling.R')
+library("knitr")
+d_rebounds_feature_season_comp <- featureSeasonComp(games.stats,  teams$PREFIX_2, 'd_rebounds')
+kable(head(d_rebounds_feature_season_comp))
+```
+
+Number of statistically insignificant difference records
+```{r}
+nrow(d_rebounds_feature_season_comp[as.numeric(d_rebounds_feature_season_comp$P_VAL) > 0.05, ])
+```
+
+Check the most influent features on the victory grouped by team and season 
+
+
+Create T-TEST for shots_perc hosting vs opponent diff per team and season devided by winning state
+```{r , cache=FALSE, warning=FALSE, message=FALSE}
+source('games_modeling.R')
+library("knitr")
+shots_perc_feature_season_comp <- featureSeasonComp(games.stats,  teams$PREFIX_2, 'shots_perc')
+kable(head(shots_perc_feature_season_comp))
+```
+
+Number of statistically insignificant difference records
+```{r}
+nrow(shots_perc_feature_season_comp[as.numeric(shots_perc_feature_season_comp$P_VAL) > 0.05, ])
+```
+

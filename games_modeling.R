@@ -3,6 +3,9 @@ library(gridExtra)
 library(dplyr)
 library(ggplot2)
 library(ROCR)
+library(boot)
+library(sqldf)
+
 
 
 
@@ -72,7 +75,7 @@ getFeatureInfluence <- function(games.stats, team, season, model.features, featu
   #model_features_var$features <- model_features
   #model_features_var$variance_diff<- as.numeric(model_features_var$variance_diff)
   glm.formula <- paste0("Is_Winner~",paste(model.features, collapse="+"))
-  stepwise.model <- step(object = glm(as.formula("Is_Winner~1"),family=binomial(link='logit'),data=df), scope = glm.formula, direction = "forward", steps = features.subset.size)
+  stepwise.model <- step(object = glm(as.formula("Is_Winner~1"),family=binomial(link='logit'),data=df), scope = glm.formula, direction = "forward", steps = features.subset.size, trace=F)
   anova.table <- stepwise.model$anova
   variance.diff <- tail(head(mapply(function(x,y) (y-x)/anova.table$"Resid. Dev"[1]*100, c(anova.table$"Resid. Dev", 0), c(0,anova.table$"Resid. Dev")),-1),-1)
   model.features.var <- as.data.frame(variance.diff, stringsAsFactors = F)
@@ -142,24 +145,57 @@ percentage_without_na <- function (x) {
   return(length(x[!is.na(x)]) / length(x))
 }
 
+
+featureSeasonComp <- function (games.stats, team_names,  feature, seasons=model_seasons) {
+  feature_season_comp = data.frame()
+  
+  #create frame of team and opponent feature per game table 
+  feature_frame <- sqldf(sprintf("select t1.GAME_ID as GAME_ID, t1.PLAY_SEASON as PLAY_SEASON, t1.TEAM as TEAM1,t2.TEAM as TEAM2, t1.Is_Winner as Is_Winner, t1.%s as feature1, t2.%s as feature2  from 'games.stats' t1, 'games.stats' t2 where t1.GAME_ID = t2.GAME_ID and t1.TEAM !=t2.TEAM", feature, feature))
+  
+  for (team_name in team_names) {
+    for (season in seasons){
+      
+      feature_diff_win <- as.array(t(feature_frame %>% filter(TEAM1==team_name & PLAY_SEASON == season & Is_Winner==1) %>% mutate(feature_diff=feature1 - feature2) %>% select (feature_diff)))
+      feature_diff_loss <- as.array(t(feature_frame %>% filter(TEAM1==team_name & PLAY_SEASON == season & Is_Winner==0) %>% mutate(feature_diff=feature1 - feature2) %>% select (feature_diff)))
+      
+      feature_ttest_pval <- t.test(feature_diff_win,feature_diff_loss)$p.value
+      
+      frame_to_add <- data.frame(as.list(c(season, team_name, mean(feature_diff_win), mean(feature_diff_loss), feature_ttest_pval)), stringsAsFactors = F)
+      colnames(frame_to_add) <- c("SEASON", "TEAM", "MEAN_WIN", "MEAN_LOSS", "P_VAL")
+      feature_season_comp <- plyr::rbind.fill(feature_season_comp, frame_to_add)
+    }
+  }
+  return(feature_season_comp)
+}
+
+#mostInfluentFeaturesTable <- mostInfluentFeaturesTable(games.stats, team_names = teams$PREFIX_2)
+
 # source('per_game_data_prep.R')
 # players <- read.csv(file = "data/players.csv", header = TRUE, stringsAsFactors=F)
 # games <- read.csv(file = "data/games.csv", header = TRUE, stringsAsFactors=F)
 # teams <- read.csv(file = "data/teams.csv", header=TRUE, stringsAsFactors = F)
 # games.stats <- createGameStats(players, games)
-
-#most_influent_features_table <- mostInfluentFeaturesTable(games.stats, team_names = teams$PREFIX_2)
-#most_influent_features_table_sorted <- most_influent_features_table[order(most_influent_features_table$win_perc),] 
-
-best_seasons <- tail(most_influent_features_table_sorted, 20)
-best_season_features <- t(data.frame(as.list(apply(best_seasons, 2, percentage_without_na))))
-best_season_features_ordered <- as.data.frame(best_season_features[order(-best_season_features[,1]), ])
-best_season_features_ordered
-
-worst_seasons <- head(most_influent_features_table_sorted, 20)
-worst_season_features <- t(data.frame(as.list(apply(worst_seasons, 2, percentage_without_na))))
-worst_season_features_ordered <- as.data.frame(worst_season_features[order(-worst_season_features[,1]), ])
-worst_season_features_ordered
+# 
+# most_influent_features_table <- mostInfluentFeaturesTable(games.stats, team_names = teams$PREFIX_2)
+# most_influent_features_table_sorted <- most_influent_features_table[order(most_influent_features_table$win_perc),] 
+# 
+# 
+# all_seasons <- tail(most_influent_features_table_sorted, 20)
+# all_season_features <- t(data.frame(as.list(apply(all_seasons, 2, percentage_without_na))))
+# all_season_features_ordered <- as.data.frame(all_season_features[order(-all_season_features[,1]), ])
+# all_season_features_ordered
+# 
+# 
+# 
+# best_seasons <- tail(most_influent_features_table_sorted, 20)
+# best_season_features <- t(data.frame(as.list(apply(best_seasons, 2, percentage_without_na))))
+# best_season_features_ordered <- as.data.frame(best_season_features[order(-best_season_features[,1]), ])
+# best_season_features_ordered
+# 
+# worst_seasons <- head(most_influent_features_table_sorted, 20)
+# worst_season_features <- t(data.frame(as.list(apply(worst_seasons, 2, percentage_without_na))))
+# worst_season_features_ordered <- as.data.frame(worst_season_features[order(-worst_season_features[,1]), ])
+# worst_season_features_ordered
 
 
 
