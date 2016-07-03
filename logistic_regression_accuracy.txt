@@ -1,0 +1,2713 @@
+ boston-celtics 2011/2012
+                Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                   NA        NA        65   89.30143 91.30143
+ 2         + assists -1 15.768889        64   73.53254 77.53254
+ 3      + d_rebounds -1 11.485356        63   62.04718 68.04718
+ 4     + minutes_std -1  6.783870        62   55.26331 63.26331
+ 5        + FT_shots -1  9.910545        61   45.35277 55.35277
+ 6 + Players_counter -1  5.271381        60   40.08139 52.0813d
+
+ boston-celtics 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        80  112.27750 114.27750
+ 2         + shots_perc -1 18.768871        79   93.50863  97.50863
+ 3         + d_rebounds -1 11.875310        78   81.63332  87.63332
+ 4             + steals -1  8.473424        77   73.15989  81.15989
+ 5 + turnovers_relative -1  8.146144        76   65.01375  75.01375
+ 6   + assists_relative -1  4.682534        75   60.33122  72.3312d
+
+ boston-celtics 2013/2014
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  100.85032 102.85032
+ 2         + shots_perc -1 21.044660        80   79.80566  83.80566
+ 3         + d_rebounds -1 14.655924        79   65.14974  71.14974
+ 4 + turnovers_relative -1  9.569174        78   55.58056  63.5805d
+
+ boston-celtics 2014/2015
+                    Step Df Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA       NA        81  113.62735 115.62735
+ 2          + shots_perc -1 8.342450        80  105.28490 109.28490
+ 3           + turnovers -1 9.571816        79   95.71309 101.71309
+ 4 + d_rebounds_relative -1 5.988537        78   89.72455  97.72455
+ 5               + shots -1 4.886061        77   84.83849  94.83849
+ 6              + steals -1 8.044661        76   76.79383  88.7938d
+
+ boston-celtics 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  111.27414 113.27414
+ 2 + d_rebounds_relative -1 25.519308        80   85.75484  89.75484
+ 3          + shots_perc -1 14.852489        79   70.90235  76.90235
+ 4               + fouls -1  6.499402        78   64.40295  72.40295
+ 5             + FT_perc -1  5.083690        77   59.31925  69.31925
+ 6              + steals -1  5.176763        76   54.14249  66.1424d
+
+ brooklyn-nets 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   84.01987 86.01987
+ 2 + d_rebounds -1 15.024505        64   68.99537 72.99537
+ 3    + assists -1 20.516391        63   48.47897 54.47897
+ 4 + points_std -1  4.643408        62   43.83557 51.83557
+ 5 + o_rebounds -1  6.188781        61   37.64678 47.64678
+ 6 + shots_perc -1  3.733362        60   33.91342 45.9134d
+
+ brooklyn-nets 2012/2013
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  110.53407 112.53407
+ 2       + d_rebounds -1 17.651744        80   92.88232  96.88232
+ 3       + shots_perc -1 22.964725        79   69.91760  75.91760
+ 4         + FT_shots -1 10.614784        78   59.30282  67.30282
+ 5 + three_shots_perc -1 12.134040        77   47.16878  57.16878
+ 6   + shots_relative -1  7.988811        76   39.17997  51.1799d
+
+ brooklyn-nets 2013/2014
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  113.23672 115.23672
+ 2 + shots_perc -1 32.197893        80   81.03883  85.03883
+ 3 + o_rebounds -1  4.995978        79   76.04285  82.04285
+ 4  + turnovers -1  3.908517        78   72.13433  80.13433
+ 5      + shots -1  4.889326        77   67.24501  77.24501
+ 6 + d_rebounds -1  8.200103        76   59.04490  71.0449d
+
+ brooklyn-nets 2014/2015
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  113.23672 115.23672
+ 2         + shots_perc -1 35.294738        80   77.94198  81.94198
+ 3         + d_rebounds -1  9.178569        79   68.76341  74.76341
+ 4              + fouls -1  8.887997        78   59.87542  67.87542
+ 5             + steals -1  6.050685        77   53.82473  63.82473
+ 6 + turnovers_relative -1  4.591155        76   49.23358  61.2335d
+
+ brooklyn-nets 2015/2016
+                          Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                             NA        NA        81   93.30540 95.30540
+ 2 + three_shots_perc_relative -1 15.967239        80   77.33816 81.33816
+ 3       + d_rebounds_relative -1 19.850938        79   57.48723 63.48723
+ 4       + shots_perc_relative -1  9.302129        78   48.18510 56.18510
+ 5                    + steals -1  9.503120        77   38.68198 48.68198
+ 6          + FT_perc_relative -1  2.412583        76   36.26939 48.2693d
+
+ new-york-knicks 2011/2012
+            Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1               NA        NA        65   90.94922 92.94922
+ 2  + shots_perc -1 14.561265        64   76.38795 80.38795
+ 3  + d_rebounds -1  8.439893        63   67.94806 73.94806
+ 4   + turnovers -1  7.709915        62   60.23815 68.23815
+ 5 + minutes_std -1  4.175709        61   56.06244 66.06244
+ 6    + FT_shots -1  4.421055        60   51.64138 63.6413d
+
+ new-york-knicks 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  105.28823 107.28823
+ 2          + shots_perc -1 25.263307        80   80.02492  84.02492
+ 3  + turnovers_relative -1  6.998212        79   73.02671  79.02671
+ 4 + d_rebounds_relative -1  6.312203        78   66.71451  74.71451
+ 5              + steals -1  4.286042        77   62.42846  72.42846
+ 6    + three_shots_perc -1  5.174918        76   57.25355  69.2535d
+
+ new-york-knicks 2013/2014
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  112.89441 114.89441
+ 2 + shots_perc -1 28.802664        80   84.09174  88.09174
+ 3 + d_rebounds -1  5.475171        79   78.61657  84.61657
+ 4     + steals -1  9.278476        78   69.33810  77.33810
+ 5  + turnovers -1  6.686569        77   62.65153  72.65153
+ 6    + assists -1  2.042417        76   60.60911  72.6091d
+
+ new-york-knicks 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   83.70236 85.70236
+ 2 + shots_perc_relative -1 15.055004        80   68.64735 72.64735
+ 3          + d_rebounds -1 17.889780        79   50.75757 56.75757
+ 4  + turnovers_relative -1  9.234291        78   41.52328 49.52328
+ 5          + o_rebounds -1  3.243846        77   38.27944 48.27944
+ 6      + shots_relative -1  7.011361        76   31.26808 43.2680d
+
+ new-york-knicks 2015/2016
+                Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA        NA        81  109.69256 111.69256
+ 2      + shots_perc -1 25.154897        80   84.53766  88.53766
+ 3        + FT_shots -1 11.057966        79   73.47970  79.47970
+ 4          + blocks -1  5.885151        78   67.59454  75.59454
+ 5       + turnovers -1  4.998035        77   62.59651  72.59651
+ 6 + Players_counter -1  3.943481        76   58.65303  70.6530d
+
+ philadelphia-76ers 2011/2012
+                Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                   NA        NA        65   91.25285 93.25285
+ 2      + shots_perc -1 23.955351        64   67.29750 71.29750
+ 3      + d_rebounds -1  7.707169        63   59.59033 65.59033
+ 4       + turnovers -1  9.332669        62   50.25767 58.25767
+ 5 + steals_relative -1  5.525923        61   44.73174 54.73174
+ 6         + assists -1  5.527370        60   39.20437 51.2043d
+
+ philadelphia-76ers 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        80  109.49597 111.49597
+ 2 + shots_perc_relative -1 19.872559        79   89.62341  93.62341
+ 3 + d_rebounds_relative -1 26.189983        78   63.43342  69.43342
+ 4              + blocks -1  6.825341        77   56.60808  64.60808
+ 5           + turnovers -1  8.386210        76   48.22187  58.22187
+ 6             + FT_perc -1  2.999659        75   45.22221  57.2222d
+
+ philadelphia-76ers 2013/2014
+                   Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                      NA        NA        81   88.77830 90.77830
+ 2         + shots_perc -1 25.635151        80   63.14315 67.14315
+ 3         + d_rebounds -1  9.524879        79   53.61827 59.61827
+ 4 + turnovers_relative -1 13.766315        78   39.85195 47.85195
+ 5             + steals -1 12.132210        77   27.71974 37.71974
+ 6         + o_rebounds -1  4.310650        76   23.40909 35.4090d
+
+ philadelphia-76ers 2014/2015
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        81   86.31154 88.31154
+ 2 + d_rebounds -1 11.658684        80   74.65285 78.65285
+ 3     + blocks -1  8.534287        79   66.11857 72.11857
+ 4     + steals -1  7.019072        78   59.09950 67.09950
+ 5    + assists -1  5.983457        77   53.11604 63.11604
+ 6  + turnovers -1  7.120412        76   45.99563 57.9956d
+
+ philadelphia-76ers 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   60.81033 62.81033
+ 2          + shots_perc -1 10.537617        80   50.27272 54.27272
+ 3              + blocks -1  8.430854        79   41.84186 47.84186
+ 4  + turnovers_relative -1  7.671922        78   34.16994 42.16994
+ 5          + d_rebounds -1  8.457778        77   25.71216 35.71216
+ 6 + o_rebounds_relative -1 12.359198        76   13.35296 25.3529d
+
+ toronto-raptors 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   85.33848 87.33848
+ 2 + d_rebounds_relative -1  8.836770        64   76.50171 80.50171
+ 3 + shots_perc_relative -1  9.416325        63   67.08539 73.08539
+ 4            + FT_shots -1 10.270922        62   56.81446 64.81446
+ 5           + turnovers -1 11.621745        61   45.19272 55.19272
+ 6          + points_std -1  7.093981        60   38.09874 50.0987d
+
+ toronto-raptors 2012/2013
+               Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                  NA        NA        80  110.19437 112.19437
+ 2     + shots_perc -1 16.518011        79   93.67636  97.67636
+ 3      + turnovers -1 10.033198        78   83.64316  89.64316
+ 4     + d_rebounds -1 13.245023        77   70.39814  78.39814
+ 5 + shots_relative -1  7.539801        76   62.85834  72.85834
+ 6         + steals -1  7.624568        75   55.23377  67.2337d
+
+ toronto-raptors 2013/2014
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  111.27414 113.27414
+ 2            + fouls -1 16.131223        80   95.14292  99.14292
+ 3 + three_shots_perc -1 13.342650        79   81.80027  87.80027
+ 4      + minutes_std -1  9.973816        78   71.82645  79.82645
+ 5           + steals -1  5.347359        77   66.47910  76.47910
+ 6       + d_rebounds -1  6.863739        76   59.61536  71.6153d
+
+ toronto-raptors 2014/2015
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        80  109.49597 111.49597
+ 2 + three_shots_perc_relative -1 16.687501        79   92.80847  96.80847
+ 3                  + FT_shots -1  7.418512        78   85.38995  91.38995
+ 4                   + assists -1 10.827952        77   74.56200  82.56200
+ 5                     + fouls -1  5.520171        76   69.04183  79.04183
+ 6           + steals_relative -1  5.722503        75   63.31933  75.3193d
+
+ toronto-raptors 2015/2016
+                Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA        NA        81  102.44155 104.44155
+ 2 + Players_counter -1 13.895321        80   88.54623  92.54623
+ 3      + shots_perc -1 13.365012        79   75.18121  81.18121
+ 4      + d_rebounds -1 19.494249        78   55.68697  63.68697
+ 5           + shots -1  6.284988        77   49.40198  59.40198
+ 6      + o_rebounds -1  9.306246        76   40.09573  52.0957d
+
+ golden-state-warriors 2011/2012
+                    Step Df Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA       NA        65   85.33848 87.33848
+ 2           + turnovers -1 5.383233        64   79.95525 83.95525
+ 3 + d_rebounds_relative -1 7.149399        63   72.80585 78.80585
+ 4 + shots_perc_relative -1 8.343874        62   64.46198 72.46198
+ 5          + o_rebounds -1 9.532606        61   54.92937 64.92937
+ 6     + blocks_relative -1 8.863333        60   46.06604 58.0660d
+
+ golden-state-warriors 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  111.91372 113.91372
+ 2             + assists -1 15.159455        80   96.75426 100.75426
+ 3          + d_rebounds -1  7.423324        79   89.33094  95.33094
+ 4            + FT_shots -1  7.508510        78   81.82243  89.82243
+ 5 + shots_perc_relative -1  9.026181        77   72.79625  82.79625
+ 6    + FT_perc_relative -1  7.122677        76   65.67357  77.6735d
+
+ golden-state-warriors 2013/2014
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  108.74854 110.74854
+ 2            + assists -1 16.727642        80   92.02089  96.02089
+ 3             + blocks -1  9.496749        79   82.52414  88.52414
+ 4 + turnovers_relative -1  9.597211        78   72.92693  80.92693
+ 5    + Players_counter -1  7.797031        77   65.12990  75.12990
+ 6             + steals -1  6.506756        76   58.62315  70.6231d
+
+ golden-state-warriors 2014/2015
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        81   78.03164 80.03164
+ 2       + shots_perc -1 12.262320        80   65.76932 69.76932
+ 3       + d_rebounds -1  5.174059        79   60.59526 66.59526
+ 4           + steals -1  4.746330        78   55.84893 63.84893
+ 5        + turnovers -1  7.209444        77   48.63949 58.63949
+ 6 + FT_perc_relative -1  2.210386        76   46.42910 58.4291d
+
+ golden-state-warriors 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   56.74484 58.74484
+ 2 + shots_perc_relative -1 19.064105        80   37.68073 41.68073
+ 3          + d_rebounds -1  5.912908        79   31.76782 37.76782
+ 4           + turnovers -1  3.805182        78   27.96264 35.96264
+ 5          + o_rebounds -1  3.345728        77   24.61691 34.61691
+ 6               + shots -1  2.845038        76   21.77187 33.7718d
+
+ los-angeles-clippers 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   88.50305 90.50305
+ 2 + shots_perc -1 12.554587        64   75.94846 79.94846
+ 3 + d_rebounds -1  5.764124        63   70.18434 76.18434
+ 4     + steals -1  6.731308        62   63.45303 71.45303
+ 5  + turnovers -1  3.276782        61   60.17625 70.17625
+ 6    + assists -1  2.040413        60   58.13584 70.1358d
+
+ los-angeles-clippers 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  102.44155 104.44155
+ 2         + shots_perc -1 20.373840        80   82.06771  86.06771
+ 3         + d_rebounds -1 18.338033        79   63.72967  69.72967
+ 4 + turnovers_relative -1 16.748399        78   46.98128  54.98128
+ 5  + FT_shots_relative -1  9.212489        77   37.76879  47.76879
+ 6    + steals_relative -1  4.611686        76   33.15710  45.1571d
+
+ los-angeles-clippers 2013/2014
+                            Step Df  Deviance Resid. Df Resid. Dev
+ 1                               NA        NA        81  100.85032
+ 2                  + shots_perc -1 38.296069        80   62.55425
+ 3         + d_rebounds_relative -1  7.604351        79   54.94990
+ 4 + three_points_shots_relative -1  5.217775        78   49.73213
+ 5              + fouls_relative -1  3.772485        77   45.95964
+ 6             + Players_counter -1  3.718454        76   42.24119
+         AIC
+ 1 102.85032
+ 2  66.55425
+ 3  60.94990
+ 4  57.73213
+ 5  55.95964
+ 6  54.2411d
+
+ los-angeles-clippers 2014/2015
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  102.44155 104.44155
+ 2         + shots_perc -1 15.249116        80   87.19243  91.19243
+ 3         + d_rebounds -1 10.721057        79   76.47137  82.47137
+ 4 + turnovers_relative -1  7.585488        78   68.88589  76.88589
+ 5    + steals_relative -1  7.273361        77   61.61253  71.61253
+ 6            + FT_perc -1  4.592899        76   57.01963  69.0196d
+
+ los-angeles-clippers 2015/2016
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  106.54786 108.54786
+ 2         + d_rebounds -1 22.744381        80   83.80347  87.80347
+ 3         + shots_perc -1 13.556276        79   70.24720  76.24720
+ 4            + FT_perc -1  4.421758        78   65.82544  73.82544
+ 5             + steals -1  3.258975        77   62.56647  72.56647
+ 6 + three_points_shots -1  4.441940        76   58.12453  70.1245d
+
+ los-angeles-lakers 2011/2012
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        65   87.57773 89.57773
+ 2       + d_rebounds -1 19.238708        64   68.33902 72.33902
+ 3       + shots_perc -1 15.325171        63   53.01385 59.01385
+ 4 + three_shots_perc -1 11.210254        62   41.80359 49.80359
+ 5            + fouls -1  5.949416        61   35.85418 45.85418
+ 6           + steals -1  8.078197        60   27.77598 39.7759d
+
+ los-angeles-lakers 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  112.89441 114.89441
+ 2   + assists_relative -1 21.396899        80   91.49751  95.49751
+ 3         + d_rebounds -1 17.477133        79   74.02038  80.02038
+ 4         + shots_perc -1  7.281891        78   66.73848  74.73848
+ 5     + fouls_relative -1  9.174343        77   57.56414  67.56414
+ 6 + three_points_shots -1  2.767397        76   54.79674  66.7967d
+
+ los-angeles-lakers 2013/2014
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  103.92012 105.92012
+ 2       + shots_perc -1 18.028301        80   85.89181  89.89181
+ 3       + d_rebounds -1 11.064138        79   74.82768  80.82768
+ 4 + three_shots_perc -1  4.693873        78   70.13380  78.13380
+ 5          + FT_perc -1  5.016284        77   65.11752  75.11752
+ 6      + minutes_std -1  4.937710        76   60.17981  72.1798d
+
+ los-angeles-lakers 2014/2015
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        81   93.30540 95.30540
+ 2          + assists -1 10.477743        80   82.82766 86.82766
+ 3       + d_rebounds -1  6.508905        79   76.31876 82.31876
+ 4       + points_std -1  7.260459        78   69.05830 77.05830
+ 5           + steals -1  6.528210        77   62.53009 72.53009
+ 6 + FT_perc_relative -1  3.461898        76   59.06819 71.0681d
+
+ los-angeles-lakers 2015/2016
+                Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                   NA        NA        81   83.70236 85.70236
+ 2 + Players_counter -1 10.804586        80   72.89777 76.89777
+ 3      + d_rebounds -1  4.793785        79   68.10399 74.10399
+ 4      + shots_perc -1  7.322778        78   60.78121 68.78121
+ 5        + FT_shots -1  5.566800        77   55.21441 65.21441
+ 6 + steals_relative -1  7.911624        76   47.30279 59.3027d
+
+ phoenix-suns 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   91.49543 93.49543
+ 2 + shots_perc -1  7.063397        64   84.43203 88.43203
+ 3 + d_rebounds -1  7.108952        63   77.32308 83.32308
+ 4  + turnovers -1 11.173788        62   66.14929 74.14929
+ 5    + assists -1  2.532465        61   63.61682 73.61682
+ 6      + shots -1  3.001075        60   60.61575 72.6157d
+
+ phoenix-suns 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  100.85032 102.85032
+ 2 + shots_perc_relative -1 10.392742        80   90.45758  94.45758
+ 3  + turnovers_relative -1  5.560095        79   84.89748  90.89748
+ 4          + d_rebounds -1  6.918701        78   77.97878  85.97878
+ 5              + steals -1 11.663071        77   66.31571  76.31571
+ 6          + o_rebounds -1  5.174055        76   61.14166  73.1416d
+
+ phoenix-suns 2013/2014
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  111.27414 113.27414
+ 2 + d_rebounds -1 22.702628        80   88.57152  92.57152
+ 3 + shots_perc -1 29.282010        79   59.28951  65.28951
+ 4  + turnovers -1  7.062980        78   52.22653  60.22653
+ 5   + FT_shots -1  7.974953        77   44.25157  54.25157
+ 6     + blocks -1  9.361255        76   34.89032  46.8903d
+
+ phoenix-suns 2014/2015
+               Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                  NA        NA        80  111.98100 113.98100
+ 2     + shots_perc -1 24.496883        79   87.48412  91.48412
+ 3     + d_rebounds -1 12.914499        78   74.56962  80.56962
+ 4 + fouls_relative -1  4.986300        77   69.58332  77.58332
+ 5       + FT_shots -1  9.015455        76   60.56787  70.56787
+ 6        + FT_perc -1  8.619968        75   51.94790  63.9479d
+
+ phoenix-suns 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   97.31980 99.31980
+ 2          + shots_perc -1 14.114019        80   83.20579 87.20579
+ 3          + d_rebounds -1 22.927275        79   60.27851 66.27851
+ 4     + steals_relative -1 10.721616        78   49.55689 57.55689
+ 5 + o_rebounds_relative -1 11.185170        77   38.37172 48.37172
+ 6              + blocks -1  7.347622        76   31.02410 43.0241d
+
+ sacramento-kings 2011/2012
+                   Step Df Deviance Resid. Df Resid. Dev      AIC
+ 1                      NA       NA        65   84.01987 86.01987
+ 2          + turnovers -1 6.832263        64   77.18761 81.18761
+ 3        + minutes_std -1 6.958053        63   70.22955 76.22955
+ 4 + three_points_shots -1 4.902762        62   65.32679 73.32679
+ 5           + FT_shots -1 4.796715        61   60.53008 70.53008
+ 6              + fouls -1 6.340563        60   54.18951 66.1895d
+
+ sacramento-kings 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  105.28823 107.28823
+ 2         + shots_perc -1 37.784516        80   67.50371  71.50371
+ 3         + d_rebounds -1 11.412994        79   56.09072  62.09072
+ 4 + turnovers_relative -1  7.302009        78   48.78871  56.78871
+ 5    + steals_relative -1  8.682057        77   40.10665  50.10665
+ 6        + minutes_std -1  7.457902        76   32.64875  44.6487d
+
+ sacramento-kings 2013/2014
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  105.28823 107.28823
+ 2       + shots_perc -1 18.345344        80   86.94288  90.94288
+ 3       + d_rebounds -1 14.515954        79   72.42693  78.42693
+ 4         + FT_shots -1 14.207303        78   58.21963  66.21963
+ 5      + minutes_std -1  5.397605        77   52.82202  62.82202
+ 6 + three_shots_perc -1  4.455965        76   48.36606  60.3660d
+
+ sacramento-kings 2014/2015
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  106.54786 108.54786
+ 2         + points_std -1 10.702339        80   95.84552  99.84552
+ 3         + d_rebounds -1 10.189394        79   85.65612  91.65612
+ 4 + turnovers_relative -1  8.882657        78   76.77347  84.77347
+ 5         + shots_perc -1  9.411142        77   67.36232  77.36232
+ 6    + steals_relative -1  6.262929        76   61.09939  73.0993d
+
+ sacramento-kings 2015/2016
+                Step Df Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA       NA        81  110.53407 112.53407
+ 2      + shots_perc -1 14.68598        80   95.84808  99.84808
+ 3      + d_rebounds -1 10.59301        79   85.25508  91.25508
+ 4           + fouls -1 16.43680        78   68.81828  76.81828
+ 5        + FT_shots -1 12.40601        77   56.41227  66.41227
+ 6 + Players_counter -1 12.39227        76   44.02000  56.0200d
+
+ chicago-bulls 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   73.10929 75.10929
+ 2             + assists -1 14.093976        64   59.01531 63.01531
+ 3 + d_rebounds_relative -1 13.805663        63   45.20965 51.20965
+ 4          + points_std -1  6.386209        62   38.82344 46.82344
+ 5               + fouls -1  6.028985        61   32.79445 42.79445
+ 6              + steals -1  4.900093        60   27.89436 39.8943d
+
+ chicago-bulls 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  112.89441 114.89441
+ 2 + shots_perc_relative -1 21.300372        80   91.59403  95.59403
+ 3          + d_rebounds -1 17.809700        79   73.78433  79.78433
+ 4   + FT_shots_relative -1  7.404808        78   66.37953  74.37953
+ 5           + turnovers -1  7.214081        77   59.16545  69.16545
+ 6             + FT_perc -1  4.966440        76   54.19901  66.1990d
+
+ chicago-bulls 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  111.27414 113.27414
+ 2 + shots_perc_relative -1 29.093642        80   82.18050  86.18050
+ 3              + blocks -1 14.564066        79   67.61644  73.61644
+ 4          + d_rebounds -1  8.687910        78   58.92853  66.92853
+ 5     + steals_relative -1  8.292689        77   50.63584  60.63584
+ 6           + turnovers -1  4.899848        76   45.73599  57.7359d
+
+ chicago-bulls 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  109.69256 111.69256
+ 2          + shots_perc -1 17.725160        80   91.96740  95.96740
+ 3               + fouls -1  9.565870        79   82.40153  88.40153
+ 4             + FT_perc -1  9.881201        78   72.52033  80.52033
+ 5 + d_rebounds_relative -1  4.726290        77   67.79404  77.79404
+ 6          + o_rebounds -1  5.613123        76   62.18091  74.1809d
+
+ chicago-bulls 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.62735 115.62735
+ 2 + shots_perc_relative -1 18.153663        80   95.47369  99.47369
+ 3 + d_rebounds_relative -1 25.412119        79   70.06157  76.06157
+ 4      + fouls_relative -1  5.324046        78   64.73752  72.73752
+ 5  + turnovers_relative -1  3.939894        77   60.79763  70.79763
+ 6            + FT_shots -1  3.850087        76   56.94754  68.9475d
+
+ cleveland-cavaliers 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   82.56486 84.56486
+ 2          + shots_perc -1 12.664399        64   69.90046 73.90046
+ 3           + turnovers -1  8.919119        63   60.98134 66.98134
+ 4     + Players_counter -1  7.244035        62   53.73731 61.73731
+ 5              + steals -1  7.481364        61   46.25594 56.25594
+ 6 + d_rebounds_relative -1  6.735761        60   39.52018 51.5201d
+
+ cleveland-cavaliers 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81   99.14398 101.14398
+ 2         + d_rebounds -1 11.775050        80   87.36893  91.36893
+ 3           + FT_shots -1 11.292877        79   76.07606  82.07606
+ 4   + three_shots_perc -1  7.924300        78   68.15176  76.15176
+ 5 + turnovers_relative -1  7.818110        77   60.33365  70.33365
+ 6         + points_std -1  4.690197        76   55.64345  67.6434d
+
+ cleveland-cavaliers 2013/2014
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        80  108.69528 110.69528
+ 2                + d_rebounds -1 27.878923        79   80.81635  84.81635
+ 3       + shots_perc_relative -1 15.047372        78   65.76898  71.76898
+ 4       + o_rebounds_relative -1 11.192535        77   54.57645  62.57645
+ 5 + three_shots_perc_relative -1  5.889743        76   48.68670  58.68670
+ 6                     + shots -1  9.846216        75   38.84049  50.8404d
+
+ cleveland-cavaliers 2014/2015
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  106.54786 108.54786
+ 2       + shots_perc -1 33.942318        80   72.60554  76.60554
+ 3       + d_rebounds -1 11.401410        79   61.20413  67.20413
+ 4        + turnovers -1 10.441925        78   50.76220  58.76220
+ 5 + three_shots_perc -1  3.494516        77   47.26769  57.26769
+ 6         + FT_shots -1  5.922091        76   41.34560  53.3456d
+
+ cleveland-cavaliers 2015/2016
+            Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1               NA        NA        81  100.85032 102.85032
+ 2  + shots_perc -1 17.927576        80   82.92275  86.92275
+ 3  + d_rebounds -1 11.700961        79   71.22178  77.22178
+ 4       + fouls -1 13.384838        78   57.83695  65.83695
+ 5  + o_rebounds -1 21.988610        77   35.84834  45.84834
+ 6 + minutes_std -1  5.483922        76   30.36441  42.3644d
+
+ detroit-pistons 2011/2012
+                   Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                      NA        NA        65   87.57773 89.57773
+ 2         + d_rebounds -1 23.201581        64   64.37614 68.37614
+ 3         + shots_perc -1 20.803061        63   43.57308 49.57308
+ 4  + FT_shots_relative -1  8.920028        62   34.65306 42.65306
+ 5              + fouls -1  5.596878        61   29.05618 39.05618
+ 6 + three_points_shots -1  3.622034        60   25.43414 37.4341d
+
+ detroit-pistons 2012/2013
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        81  106.54786 108.54786
+ 2                + shots_perc -1 22.561368        80   83.98649  87.98649
+ 3                + d_rebounds -1 26.263540        79   57.72295  63.72295
+ 4        + turnovers_relative -1  7.887275        78   49.83567  57.83567
+ 5            + fouls_relative -1  3.245559        77   46.59011  56.59011
+ 6 + three_shots_perc_relative -1  3.892419        76   42.69769  54.6976d
+
+ detroit-pistons 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  106.54786 108.54786
+ 2          + shots_perc -1 16.909351        80   89.63850  93.63850
+ 3 + d_rebounds_relative -1 19.080210        79   70.55829  76.55829
+ 4              + steals -1  8.771649        78   61.78665  69.78665
+ 5    + FT_perc_relative -1  5.992027        77   55.79462  65.79462
+ 6          + o_rebounds -1  3.290564        76   52.50405  64.5040d
+
+ detroit-pistons 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  109.69256 111.69256
+ 2          + shots_perc -1 21.110649        80   88.58191  92.58191
+ 3 + d_rebounds_relative -1 13.619903        79   74.96201  80.96201
+ 4              + steals -1  8.386844        78   66.57516  74.57516
+ 5          + points_std -1  7.691304        77   58.88386  68.88386
+ 6               + fouls -1  7.531330        76   51.35253  63.3525d
+
+ detroit-pistons 2015/2016
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  113.23672 115.23672
+ 2 + three_shots_perc -1 26.611329        80   86.62539  90.62539
+ 3       + d_rebounds -1 14.586627        79   72.03876  78.03876
+ 4           + steals -1  9.015116        78   63.02365  71.02365
+ 5        + turnovers -1  6.555079        77   56.46857  66.46857
+ 6       + o_rebounds -1  4.815006        76   51.65356  63.6535d
+
+ indiana-pacers 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   86.52359 88.52359
+ 2    + assists -1 19.739706        64   66.78389 70.78389
+ 3 + d_rebounds -1 12.956297        63   53.82759 59.82759
+ 4  + turnovers -1  4.420304        62   49.40729 57.40729
+ 5 + o_rebounds -1  3.445569        61   45.96172 55.96172
+ 6      + shots -1  5.226133        60   40.73558 52.7355d
+
+ indiana-pacers 2012/2013
+                            Step Df Deviance Resid. Df Resid. Dev       AIC
+ 1                               NA       NA        80  108.69528 110.69528
+ 2                     + assists -1 13.28733        79   95.40795  99.40795
+ 3                      + steals -1 10.94725        78   84.46069  90.46069
+ 4                  + d_rebounds -1 18.67090        77   65.78980  73.78980
+ 5                  + shots_perc -1 11.68087        76   54.10893  64.10893
+ 6 + three_points_shots_relative -1  5.78887        75   48.32006  60.3200d
+
+ indiana-pacers 2013/2014
+               Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                  NA        NA        81  102.44155 104.44155
+ 2        + assists -1 27.918750        80   74.52280  78.52280
+ 3 + fouls_relative -1 16.951622        79   57.57118  63.57118
+ 4     + d_rebounds -1 10.205191        78   47.36598  55.36598
+ 5     + shots_perc -1  5.230647        77   42.13534  52.13534
+ 6     + o_rebounds -1  8.753286        76   33.38205  45.3820d
+
+ indiana-pacers 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        80  111.98100 113.98100
+ 2 + shots_perc_relative -1 19.385058        79   92.59595  96.59595
+ 3 + d_rebounds_relative -1 13.546255        78   79.04969  85.04969
+ 4           + turnovers -1  9.902553        77   69.14714  77.14714
+ 5            + FT_shots -1  9.291485        76   59.85565  69.85565
+ 6          + o_rebounds -1  6.739622        75   53.11603  65.1160d
+
+ indiana-pacers 2015/2016
+                Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA        NA        81  112.89441 114.89441
+ 2      + d_rebounds -1 17.793184        80   95.10122  99.10122
+ 3      + shots_perc -1 21.132141        79   73.96908  79.96908
+ 4          + steals -1  5.437534        78   68.53155  76.53155
+ 5 + Players_counter -1  4.633182        77   63.89837  73.89837
+ 6           + fouls -1  4.356879        76   59.54149  71.5414d
+
+ milwaukee-bucks 2011/2012
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        65   91.25285 93.25285
+ 2       + shots_perc -1 18.748676        64   72.50418 76.50418
+ 3         + FT_shots -1  7.051787        63   65.45239 71.45239
+ 4 + assists_relative -1  6.414782        62   59.03761 67.03761
+ 5       + d_rebounds -1  4.009848        61   55.02776 65.02776
+ 6 + FT_perc_relative -1  3.136037        60   51.89173 63.8917d
+
+ milwaukee-bucks 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.23672 115.23672
+ 2          + shots_perc -1 21.045989        80   92.19073  96.19073
+ 3            + FT_shots -1 13.847811        79   78.34292  84.34292
+ 4              + steals -1  6.384266        78   71.95866  79.95866
+ 5 + o_rebounds_relative -1  7.901750        77   64.05691  74.0569d
+
+ milwaukee-bucks 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   78.03164 80.03164
+ 2 + shots_perc_relative -1 12.439449        80   65.59219 69.59219
+ 3           + turnovers -1  5.736871        79   59.85532 65.85532
+ 4          + points_std -1  4.667316        78   55.18800 63.18800
+ 5              + blocks -1  4.755033        77   50.43297 60.43297
+ 6    + three_shots_perc -1  5.722644        76   44.71033 56.7103d
+
+ milwaukee-bucks 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.67614 115.67614
+ 2    + three_shots_perc -1 15.507404        80   98.16873 102.16873
+ 3          + d_rebounds -1  7.683286        79   90.48545  96.48545
+ 4 + shots_perc_relative -1  4.876557        78   85.60889  93.60889
+ 5              + steals -1  3.502032        77   82.10686  92.10686
+ 6  + three_points_shots -1  2.162403        76   79.94446  91.9444d
+
+ milwaukee-bucks 2015/2016
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  110.53407 112.53407
+ 2           + blocks -1  9.747088        80  100.78698 104.78698
+ 3         + FT_shots -1  8.367972        79   92.41901  98.41901
+ 4 + three_shots_perc -1 11.820973        78   80.59803  88.59803
+ 5          + assists -1  5.696217        77   74.90182  84.90182
+ 6            + fouls -1  5.850725        76   69.05109  81.0510d
+
+ dallas-mavericks 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   90.94922 92.94922
+ 2          + shots_perc -1 23.994115        64   66.95510 70.95510
+ 3          + d_rebounds -1 14.666660        63   52.28844 58.28844
+ 4            + FT_shots -1  9.929835        62   42.35861 50.35861
+ 5 + o_rebounds_relative -1  6.611498        61   35.74711 45.74711
+ 6           + turnovers -1  3.863330        60   31.88378 43.8837d
+
+ dallas-mavericks 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  113.67614 115.67614
+ 2         + shots_perc -1 43.831731        80   69.84441  73.84441
+ 3         + o_rebounds -1 10.847716        79   58.99669  64.99669
+ 4 + turnovers_relative -1 12.517332        78   46.47936  54.47936
+ 5    + blocks_relative -1  6.066181        77   40.41318  50.41318
+ 6           + FT_shots -1  7.715341        76   32.69784  44.6978d
+
+ dallas-mavericks 2013/2014
+                   Step Df Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA       NA        81  110.53407 112.53407
+ 2              + shots -1 12.99753        80   97.53654 101.53654
+ 3   + assists_relative -1 19.47805        79   78.05848  84.05848
+ 4         + d_rebounds -1  8.22294        78   69.83554  77.83554
+ 5 + turnovers_relative -1 13.82591        77   56.00963  66.00963
+ 6    + Players_counter -1  2.71115        76   53.29848  65.2984d
+
+ dallas-mavericks 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  109.69256 111.69256
+ 2          + shots_perc -1 27.136579        80   82.55598  86.55598
+ 3 + d_rebounds_relative -1 10.900104        79   71.65588  77.65588
+ 4     + steals_relative -1  9.507231        78   62.14864  70.14864
+ 5           + turnovers -1  8.872370        77   53.27627  63.27627
+ 6     + blocks_relative -1  4.278766        76   48.99751  60.9975d
+
+ dallas-mavericks 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.62735 115.62735
+ 2 + shots_perc_relative -1 11.033426        80  102.59393 106.59393
+ 3              + steals -1  8.689173        79   93.90475  99.90475
+ 4          + d_rebounds -1  7.124444        78   86.78031  94.78031
+ 5           + turnovers -1  5.103041        77   81.67727  91.67727
+ 6      + shots_relative -1  5.514081        76   76.16319  88.1631d
+
+ houston-rockets 2011/2012
+                   Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                      NA        NA        65   91.43481 93.43481
+ 2         + shots_perc -1 10.200314        64   81.23450 85.23450
+ 3         + d_rebounds -1 11.358540        63   69.87596 75.87596
+ 4              + fouls -1  7.779454        62   62.09651 70.09651
+ 5   + three_shots_perc -1  6.055303        61   56.04120 66.04120
+ 6 + three_points_shots -1  3.324369        60   52.71683 64.7168d
+
+ houston-rockets 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  112.89441 114.89441
+ 2          + shots_perc -1 23.689093        80   89.20531  93.20531
+ 3 + d_rebounds_relative -1 17.261480        79   71.94383  77.94383
+ 4             + FT_perc -1  5.468178        78   66.47566  74.47566
+ 5      + fouls_relative -1  4.632942        77   61.84271  71.84271
+ 6          + o_rebounds -1  5.613608        76   56.22911  68.2291d
+
+ houston-rockets 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  105.28823 107.28823
+ 2          + shots_perc -1 33.958063        80   71.33016  75.33016
+ 3 + d_rebounds_relative -1 19.756826        79   51.57334  57.57334
+ 4           + turnovers -1  3.933131        78   47.64021  55.64021
+ 5   + FT_shots_relative -1  3.501200        77   44.13901  54.13901
+ 6         + minutes_std -1  2.919834        76   41.21917  53.2191d
+
+ houston-rockets 2014/2015
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        81  102.44155 104.44155
+ 2                + d_rebounds -1 20.593636        80   81.84791  85.84791
+ 3                + points_std -1 12.546051        79   69.30186  75.30186
+ 4 + three_shots_perc_relative -1  8.580538        78   60.72132  68.72132
+ 5                    + blocks -1  4.159622        77   56.56170  66.56170
+ 6                + o_rebounds -1  3.181505        76   53.38020  65.3802d
+
+ houston-rockets 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.67614 115.67614
+ 2          + shots_perc -1 11.357618        80  102.31852 106.31852
+ 3          + d_rebounds -1  9.046852        79   93.27167  99.27167
+ 4 + o_rebounds_relative -1 10.078571        78   83.19310  91.19310
+ 5              + steals -1  3.731365        77   79.46173  89.46173
+ 6     + Players_counter -1  4.540954        76   74.92078  86.9207d
+
+ memphis-grizzlies 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   87.57773 89.57773
+ 2 + shots_perc_relative -1 19.581114        64   67.99661 71.99661
+ 3               + fouls -1 12.739376        63   55.25724 61.25724
+ 4          + d_rebounds -1  7.838624        62   47.41861 55.41861
+ 5          + o_rebounds -1  4.795471        61   42.62314 52.62314
+ 6             + FT_perc -1  4.934740        60   37.68840 49.6884d
+
+ memphis-grizzlies 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  102.44155 104.44155
+ 2          + d_rebounds -1 19.011578        80   83.42997  87.42997
+ 3 + shots_perc_relative -1 15.113669        79   68.31630  74.31630
+ 4              + steals -1  5.301048        78   63.01525  71.01525
+ 5              + blocks -1  4.879188        77   58.13606  68.13606
+ 6            + FT_shots -1  5.836475        76   52.29959  64.2995d
+
+ memphis-grizzlies 2013/2014
+                  Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                     NA        NA        81  109.69256 111.69256
+ 2        + d_rebounds -1 28.862602        80   80.82996  84.82996
+ 3        + shots_perc -1 16.009698        79   64.82026  70.82026
+ 4            + blocks -1  6.704337        78   58.11592  66.11592
+ 5             + fouls -1  5.202108        77   52.91381  62.91381
+ 6 + FT_shots_relative -1  4.048359        76   48.86545  60.8654d
+
+ memphis-grizzlies 2014/2015
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        81  103.92012 105.92012
+ 2                + shots_perc -1 15.425149        80   88.49497  92.49497
+ 3                + d_rebounds -1 16.045235        79   72.44973  78.44973
+ 4                  + FT_shots -1  6.218804        78   66.23093  74.23093
+ 5 + three_shots_perc_relative -1  6.913282        77   59.31764  69.31764
+ 6        + turnovers_relative -1  3.903113        76   55.41453  67.4145d
+
+ memphis-grizzlies 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.62735 115.62735
+ 2 + shots_perc_relative -1 20.138667        80   93.48869  97.48869
+ 3             + FT_perc -1  9.442713        79   84.04597  90.04597
+ 4 + d_rebounds_relative -1  9.437688        78   74.60828  82.60828
+ 5          + points_std -1  7.240005        77   67.36828  77.36828
+ 6             + assists -1  6.121530        76   61.24675  73.2467d
+
+ new-orleans-pelicans 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   82.56486 84.56486
+ 2 + d_rebounds -1  5.477497        64   77.08736 81.08736
+ 3 + shots_perc -1  8.336734        63   68.75063 74.75063
+ 4     + steals -1 10.632004        62   58.11862 66.11862
+ 5 + o_rebounds -1  5.073097        61   53.04553 63.04553
+ 6      + shots -1  2.397013        60   50.64851 62.6485d
+
+ new-orleans-pelicans 2012/2013
+                Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA        NA        81  103.92012 105.92012
+ 2      + shots_perc -1 11.998901        80   91.92121  95.92121
+ 3           + fouls -1  8.260889        79   83.66032  89.66032
+ 4      + o_rebounds -1  7.191918        78   76.46841  84.46841
+ 5      + d_rebounds -1  8.826210        77   67.64220  77.64220
+ 6 + steals_relative -1  7.895063        76   59.74713  71.7471d
+
+ new-orleans-pelicans 2013/2014
+                Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA        NA        81  111.27414 113.27414
+ 2      + shots_perc -1 24.276483        80   86.99766  90.99766
+ 3      + o_rebounds -1 11.045388        79   75.95227  81.95227
+ 4          + blocks -1 10.361698        78   65.59058  73.59058
+ 5       + turnovers -1  6.698897        77   58.89168  68.89168
+ 6 + steals_relative -1  8.042386        76   50.84929  62.8492d
+
+ new-orleans-pelicans 2014/2015
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  112.89441 114.89441
+ 2 + shots_perc -1 26.835036        80   86.05937  90.05937
+ 3 + d_rebounds -1  8.000519        79   78.05885  84.05885
+ 4  + turnovers -1  9.680468        78   68.37838  76.37838
+ 5     + blocks -1  6.766973        77   61.61141  71.6114d
+
+ new-orleans-pelicans 2015/2016
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  107.70077 109.70077
+ 2       + shots_perc -1 40.974951        80   66.72582  70.72582
+ 3       + d_rebounds -1 10.145771        79   56.58004  62.58004
+ 4 + three_shots_perc -1 13.128768        78   43.45128  51.45128
+ 5           + steals -1  9.725222        77   33.72605  43.72605
+ 6            + fouls -1  4.553660        76   29.17240  41.1724d
+
+ san-antonio-spurs 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   73.10929 75.10929
+ 2          + d_rebounds -1 10.835152        64   62.27413 66.27413
+ 3 + shots_perc_relative -1  7.842017        63   54.43212 60.43212
+ 4              + steals -1  5.560714        62   48.87140 56.87140
+ 5    + FT_perc_relative -1  7.071944        61   41.79946 51.79946
+ 6 + o_rebounds_relative -1  3.106940        60   38.69252 50.6925d
+
+ san-antonio-spurs 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81   99.14398 101.14398
+ 2         + shots_perc -1 37.264738        80   61.87925  65.87925
+ 3         + d_rebounds -1 12.657139        79   49.22211  55.22211
+ 4             + steals -1  4.389498        78   44.83261  52.83261
+ 5          + turnovers -1  2.936633        77   41.89598  51.89598
+ 6 + three_points_shots -1  3.375226        76   38.52075  50.5207d
+
+ san-antonio-spurs 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   91.10800 93.10800
+ 2          + d_rebounds -1 30.158767        80   60.94924 64.94924
+ 3              + steals -1 14.185216        79   46.76402 52.76402
+ 4 + shots_perc_relative -1 19.289329        78   27.47469 35.47469
+ 5            + FT_shots -1  5.243456        77   22.23123 32.23123
+ 6     + Players_counter -1  2.442215        76   19.78902 31.7890d
+
+ san-antonio-spurs 2014/2015
+                   Step Df Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA       NA        81  103.92012 105.92012
+ 2         + shots_perc -1 12.94320        80   90.97691  94.97691
+ 3             + steals -1 10.41499        79   80.56192  86.56192
+ 4 + turnovers_relative -1 11.47090        78   69.09102  77.09102
+ 5         + d_rebounds -1 11.13108        77   57.95994  67.95994
+ 6     + shots_relative -1  8.64860        76   49.31134  61.3113d
+
+ san-antonio-spurs 2015/2016
+                          Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                             NA        NA        81   78.03164 80.03164
+ 2                + shots_perc -1 21.860960        80   56.17068 60.17068
+ 3                + d_rebounds -1 12.668083        79   43.50260 49.50260
+ 4       + o_rebounds_relative -1  2.761086        78   40.74151 48.74151
+ 5 + three_shots_perc_relative -1  2.977586        77   37.76392 47.76392
+ 6                    + steals -1  2.957658        76   34.80627 46.8062d
+
+ atlanta-hawks 2011/2012
+                   Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                      NA        NA        64   87.49152 89.49152
+ 2         + shots_perc -1 26.798768        63   60.69275 64.69275
+ 3         + d_rebounds -1  8.573976        62   52.11877 58.11877
+ 4 + turnovers_relative -1  9.400157        61   42.71862 50.71862
+ 5         + o_rebounds -1  7.728115        60   34.99050 44.99050
+ 6             + steals -1  8.840143        59   26.15036 38.1503d
+
+ atlanta-hawks 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.23672 115.23672
+ 2 + shots_perc_relative -1 18.195738        80   95.04098  99.04098
+ 3          + o_rebounds -1 11.511565        79   83.52942  89.52942
+ 4          + d_rebounds -1 10.908870        78   72.62055  80.62055
+ 5     + steals_relative -1 18.497152        77   54.12340  64.12340
+ 6           + turnovers -1  5.665902        76   48.45749  60.4574d
+
+ atlanta-hawks 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.23672 115.23672
+ 2          + d_rebounds -1 15.548504        80   97.68822 101.68822
+ 3 + shots_perc_relative -1 12.359409        79   85.32881  91.32881
+ 4           + turnovers -1  8.078032        78   77.25078  85.25078
+ 5          + points_std -1  4.346343        77   72.90443  82.90443
+ 6      + fouls_relative -1  5.509920        76   67.39451  79.3945d
+
+ atlanta-hawks 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   95.37474 97.37474
+ 2 + shots_perc_relative -1 11.740206        80   83.63453 87.63453
+ 3          + d_rebounds -1 14.053092        79   69.58144 75.58144
+ 4              + steals -1  8.455407        78   61.12604 69.12604
+ 5          + points_std -1  5.170626        77   55.95541 65.95541
+ 6          + o_rebounds -1  3.499404        76   52.45601 64.4560d
+
+ atlanta-hawks 2015/2016
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  111.27414 113.27414
+ 2         + shots_perc -1 30.339250        80   80.93489  84.93489
+ 3 + turnovers_relative -1 15.864166        79   65.07073  71.07073
+ 4         + d_rebounds -1 15.937608        78   49.13312  57.13312
+ 5         + o_rebounds -1 16.890605        77   32.24251  42.24251
+ 6        + minutes_std -1  3.943366        76   28.29915  40.2991d
+
+ charlotte-hornets 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   44.64227 46.64227
+ 2 + shots_perc_relative -1 19.588725        64   25.05354 29.05354
+ 3          + d_rebounds -1  3.027982        63   22.02556 28.0255d
+
+ charlotte-hornets 2012/2013
+                  Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                     NA        NA        81   93.30540 95.30540
+ 2        + d_rebounds -1 19.417615        80   73.88779 77.88779
+ 3        + shots_perc -1 10.043866        79   63.84392 69.84392
+ 4            + steals -1 11.785839        78   52.05808 60.05808
+ 5 + FT_shots_relative -1  9.018968        77   43.03911 53.03911
+ 6  + FT_perc_relative -1  3.926594        76   39.11252 51.1125d
+
+ charlotte-hornets 2013/2014
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  113.48094 115.48094
+ 2       + d_rebounds -1 22.044953        80   91.43599  95.43599
+ 3       + shots_perc -1 19.828016        79   71.60797  77.60797
+ 4         + FT_shots -1 13.667037        78   57.94093  65.94093
+ 5            + fouls -1  4.356278        77   53.58465  63.58465
+ 6 + three_shots_perc -1  3.682059        76   49.90260  61.9026d
+
+ charlotte-hornets 2014/2015
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  110.53407 112.53407
+ 2         + shots_perc -1 16.848224        80   93.68584  97.68584
+ 3         + o_rebounds -1 19.269768        79   74.41608  80.41608
+ 4         + d_rebounds -1 12.366131        78   62.04995  70.04995
+ 5 + three_points_shots -1  5.960766        77   56.08918  66.08918
+ 6         + points_std -1  6.070220        76   50.01896  62.0189d
+
+ charlotte-hornets 2015/2016
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  111.27414 113.27414
+ 2       + shots_perc -1 29.443156        80   81.83099  85.83099
+ 3       + d_rebounds -1 13.205212        79   68.62578  74.62578
+ 4       + points_std -1  9.900986        78   58.72479  66.72479
+ 5  + steals_relative -1  5.763736        77   52.96105  62.96105
+ 6 + three_shots_perc -1  3.427646        76   49.53341  61.5334d
+
+ miami-heat 2011/2012
+                Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                   NA        NA        65   80.97013 82.97013
+ 2      + shots_perc -1 21.885258        64   59.08487 63.08487
+ 3      + d_rebounds -1  7.048438        63   52.03643 58.03643
+ 4       + turnovers -1  7.332674        62   44.70376 52.70376
+ 5         + FT_perc -1  5.539724        61   39.16403 49.16403
+ 6 + Players_counter -1  3.394464        60   35.76957 47.7695d
+
+ miami-heat 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   80.94469 82.94469
+ 2             + assists -1 27.277409        80   53.66728 57.66728
+ 3              + steals -1  6.985707        79   46.68158 52.68158
+ 4    + FT_perc_relative -1  6.836621        78   39.84495 47.84495
+ 5          + shots_perc -1  3.843430        77   36.00152 46.00152
+ 6 + d_rebounds_relative -1  6.291455        76   29.71007 41.7100d
+
+ miami-heat 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  105.28823 107.28823
+ 2          + shots_perc -1 19.895855        80   85.39237  89.39237
+ 3 + o_rebounds_relative -1  7.823100        79   77.56927  83.56927
+ 4 + d_rebounds_relative -1  7.045647        78   70.52363  78.52363
+ 5           + turnovers -1  6.909550        77   63.61408  73.61408
+ 6              + steals -1  3.947796        76   59.66628  71.6662d
+
+ miami-heat 2014/2015
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        80  111.68415 113.68415
+ 2         + d_rebounds -1 25.026786        79   86.65736  90.65736
+ 3         + points_std -1 23.444012        78   63.21335  69.21335
+ 4   + assists_relative -1 11.430447        77   51.78291  59.78291
+ 5          + turnovers -1  3.578332        76   48.20457  58.20457
+ 6 + three_points_shots -1  3.633121        75   44.57145  56.5714d
+
+ miami-heat 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  111.27414 113.27414
+ 2           + turnovers -1 12.972640        80   98.30150 102.30150
+ 3          + shots_perc -1 10.208050        79   88.09345  94.09345
+ 4 + d_rebounds_relative -1 18.435024        78   69.65843  77.65843
+ 5              + steals -1 12.423192        77   57.23524  67.23524
+ 6            + FT_shots -1  5.278594        76   51.95664  63.9566d
+
+ orlando-magic 2011/2012
+                          Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                             NA        NA        65   90.52334 92.52334
+ 2          + assists_relative -1 32.585611        64   57.93773 61.93773
+ 3       + d_rebounds_relative -1 11.073301        63   46.86443 52.86443
+ 4         + FT_shots_relative -1  7.929288        62   38.93514 46.93514
+ 5               + minutes_std -1  6.336724        61   32.59842 42.59842
+ 6 + three_shots_perc_relative -1  5.606954        60   26.99146 38.9914d
+
+ orlando-magic 2012/2013
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        81   91.10800 93.10800
+ 2          + assists -1 19.010700        80   72.09730 76.09730
+ 3 + three_shots_perc -1  9.501711        79   62.59559 68.59559
+ 4      + minutes_std -1  9.476583        78   53.11901 61.11901
+ 5       + d_rebounds -1  7.665445        77   45.45356 55.45356
+ 6        + turnovers -1  5.985357        76   39.46821 51.4682d
+
+ orlando-magic 2013/2014
+                    Step Df Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA       NA        80   96.65664 98.65664
+ 2          + d_rebounds -1 24.00010        79   72.65654 76.65654
+ 3          + shots_perc -1 11.19061        78   61.46593 67.46593
+ 4               + fouls -1 16.40362        77   45.06231 53.06231
+ 5 + o_rebounds_relative -1 19.07396        76   25.98835 35.98835
+ 6              + steals -1  9.60114        75   16.38721 28.3872d
+
+ orlando-magic 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  100.85032 102.85032
+ 2          + shots_perc -1 19.031975        80   81.81835  85.81835
+ 3          + d_rebounds -1 10.627675        79   71.19067  77.19067
+ 4            + FT_shots -1  5.728662        78   65.46201  73.46201
+ 5     + Players_counter -1  6.403407        77   59.05860  69.05860
+ 6 + o_rebounds_relative -1  7.266309        76   51.79229  63.7922d
+
+ orlando-magic 2015/2016
+               Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                  NA        NA        81  111.91372 113.91372
+ 2     + shots_perc -1 13.077925        80   98.83579 102.83579
+ 3     + d_rebounds -1  9.391699        79   89.44409  95.44409
+ 4     + o_rebounds -1 10.055588        78   79.38851  87.38851
+ 5      + turnovers -1  5.087506        77   74.30100  84.30100
+ 6 + shots_relative -1  7.462520        76   66.83848  78.8384d
+
+ washington-wizards 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        64   80.24143 82.24143
+ 2          + d_rebounds -1 21.751910        63   58.48952 62.48952
+ 3 + shots_perc_relative -1  9.854476        62   48.63504 54.63504
+ 4              + steals -1  6.961426        61   41.67362 49.67362
+ 5           + turnovers -1  4.021267        60   37.65235 47.65235
+ 6          + o_rebounds -1  3.110833        59   34.54152 46.5415d
+
+ washington-wizards 2012/2013
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        81  106.54786 108.54786
+ 2                + shots_perc -1 25.815044        80   80.73281  84.73281
+ 3                + d_rebounds -1 12.353687        79   68.37912  74.37912
+ 4        + turnovers_relative -1 13.187673        78   55.19145  63.19145
+ 5 + three_shots_perc_relative -1  7.392976        77   47.79848  57.79848
+ 6                  + FT_shots -1  2.973003        76   44.82547  56.8254d
+
+ washington-wizards 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.23672 115.23672
+ 2 + shots_perc_relative -1 22.353375        80   90.88335  94.88335
+ 3          + d_rebounds -1 11.680703        79   79.20264  85.20264
+ 4    + three_shots_perc -1  6.774939        78   72.42770  80.42770
+ 5           + turnovers -1  6.022167        77   66.40554  76.40554
+ 6             + FT_perc -1  4.416207        76   61.98933  73.9893d
+
+ washington-wizards 2014/2015
+                            Step Df  Deviance Resid. Df Resid. Dev
+ 1                               NA        NA        81  112.45358
+ 2                  + shots_perc -1 44.714625        80   67.73896
+ 3                  + d_rebounds -1 10.123099        79   57.61586
+ 4                      + steals -1  8.992747        78   48.62311
+ 5            + assists_relative -1  3.745196        77   44.87792
+ 6 + three_points_shots_relative -1  2.450840        76   42.42708
+         AIC
+ 1 114.45358
+ 2  71.73896
+ 3  63.61586
+ 4  56.62311
+ 5  54.87792
+ 6  54.4270d
+
+ washington-wizards 2015/2016
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  113.67614 115.67614
+ 2 + shots_perc -1 34.445925        80   79.23021  83.23021
+ 3     + blocks -1 11.460933        79   67.76928  73.76928
+ 4 + d_rebounds -1  5.879351        78   61.88993  69.88993
+ 5   + FT_shots -1  3.401587        77   58.48834  68.48834
+ 6    + assists -1  3.626018        76   54.86232  66.8623d
+
+ denver-nuggets 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   89.97443 91.97443
+ 2    + assists -1 17.017140        64   72.95729 76.95729
+ 3 + d_rebounds -1 10.823829        63   62.13346 68.13346
+ 4 + shots_perc -1  6.776032        62   55.35742 63.35742
+ 5   + FT_shots -1  6.702163        61   48.65526 58.65526
+ 6  + turnovers -1  9.802765        60   38.85250 50.8525d
+
+ denver-nuggets 2012/2013
+                Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA        NA        81  100.85032 102.85032
+ 2         + assists -1 12.281655        80   88.56867  92.56867
+ 3        + FT_shots -1  7.751724        79   80.81694  86.81694
+ 4      + d_rebounds -1  3.568383        78   77.24856  85.24856
+ 5 + steals_relative -1  4.616378        77   72.63218  82.63218
+ 6           + fouls -1  3.241706        76   69.39047  81.3904d
+
+ denver-nuggets 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  112.45358 114.45358
+ 2          + shots_perc -1 24.259682        80   88.19390  92.19390
+ 3          + d_rebounds -1 12.428135        79   75.76577  81.76577
+ 4      + fouls_relative -1 10.303056        78   65.46271  73.46271
+ 5 + o_rebounds_relative -1  6.309451        77   59.15326  69.15326
+ 6             + FT_perc -1  6.323261        76   52.83000  64.8300d
+
+ denver-nuggets 2014/2015
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  107.70077 109.70077
+ 2 + shots_perc -1 25.353693        80   82.34707  86.34707
+ 3 + d_rebounds -1 23.947351        79   58.39972  64.39972
+ 4 + points_std -1  3.177497        78   55.22223  63.22223
+ 5    + assists -1  3.164567        77   52.05766  62.05766
+ 6      + fouls -1  4.544140        76   47.51352  59.5135d
+
+ denver-nuggets 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  110.53407 112.53407
+ 2    + three_shots_perc -1 21.504737        80   89.02933  93.02933
+ 3 + d_rebounds_relative -1 15.492050        79   73.53728  79.53728
+ 4 + shots_perc_relative -1 10.059425        78   63.47786  71.47786
+ 5           + turnovers -1  6.751026        77   56.72683  66.72683
+ 6            + FT_shots -1  5.290081        76   51.43675  63.4367d
+
+ minnesota-timberwolves 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   88.50305 90.50305
+ 2    + three_shots_perc -1 12.332460        64   76.17059 80.17059
+ 3               + fouls -1  9.573442        63   66.59715 72.59715
+ 4 + d_rebounds_relative -1  4.842026        62   61.75512 69.75512
+ 5           + turnovers -1  8.716823        61   53.03830 63.03830
+ 6          + shots_perc -1  4.542529        60   48.49577 60.4957d
+
+ minnesota-timberwolves 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  108.74854 110.74854
+ 2 + shots_perc_relative -1 22.503702        80   86.24483  90.24483
+ 3          + d_rebounds -1 19.722813        79   66.52202  72.52202
+ 4   + FT_shots_relative -1  9.170111        78   57.35191  65.35191
+ 5               + fouls -1  6.778821        77   50.57309  60.57309
+ 6              + steals -1  4.157801        76   46.41529  58.4152d
+
+ minnesota-timberwolves 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.62735 115.62735
+ 2 + shots_perc_relative -1 27.475208        80   86.15214  90.15214
+ 3          + d_rebounds -1 11.430292        79   74.72185  80.72185
+ 4           + turnovers -1 11.010930        78   63.71092  71.71092
+ 5     + steals_relative -1 12.035533        77   51.67539  61.67539
+ 6            + FT_shots -1  5.312747        76   46.36264  58.3626d
+
+ minnesota-timberwolves 2014/2015
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        81   80.94469 82.94469
+ 2       + shots_perc -1 13.135311        80   67.80938 71.80938
+ 3       + d_rebounds -1 11.136227        79   56.67315 62.67315
+ 4           + steals -1 14.549900        78   42.12325 50.12325
+ 5      + minutes_std -1  8.771036        77   33.35222 43.35222
+ 6 + FT_perc_relative -1  5.571735        76   27.78048 39.7804d
+
+ minnesota-timberwolves 2015/2016
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  106.54786 108.54786
+ 2         + shots_perc -1 15.436493        80   91.11136  95.11136
+ 3         + d_rebounds -1 18.104085        79   73.00728  79.00728
+ 4           + FT_shots -1  4.777690        78   68.22959  76.22959
+ 5 + three_points_shots -1  2.927068        77   65.30252  75.30252
+ 6          + turnovers -1  3.667178        76   61.63534  73.6353d
+
+ oklahoma-city-thunder 2011/2012
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        65   79.23187 81.23187
+ 2       + shots_perc -1 10.165066        64   69.06680 73.06680
+ 3         + FT_shots -1  8.992113        63   60.07469 66.07469
+ 4            + fouls -1  8.135247        62   51.93944 59.93944
+ 5 + FT_perc_relative -1  9.538882        61   42.40056 52.40056
+ 6       + d_rebounds -1  9.023745        60   33.37682 45.3768d
+
+ oklahoma-city-thunder 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   95.37474 97.37474
+ 2     + Players_counter -1 11.764651        80   83.61009 87.61009
+ 3    + three_shots_perc -1  6.023456        79   77.58663 83.58663
+ 4 + d_rebounds_relative -1  7.499173        78   70.08746 78.08746
+ 5              + steals -1  7.685529        77   62.40193 72.40193
+ 6  + turnovers_relative -1 11.045978        76   51.35595 63.3559d
+
+ oklahoma-city-thunder 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   97.31980 99.31980
+ 2          + shots_perc -1 14.016079        80   83.30373 87.30373
+ 3 + d_rebounds_relative -1 13.177464        79   70.12626 76.12626
+ 4           + turnovers -1  5.612712        78   64.51355 72.51355
+ 5              + steals -1  6.617942        77   57.89561 67.89561
+ 6              + blocks -1  7.124559        76   50.77105 62.7710d
+
+ oklahoma-city-thunder 2014/2015
+               Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                  NA        NA        81  112.89441 114.89441
+ 2     + shots_perc -1 23.027071        80   89.86734  93.86734
+ 3     + o_rebounds -1  7.456790        79   82.41055  88.41055
+ 4         + blocks -1 12.067443        78   70.34310  78.34310
+ 5        + FT_perc -1  5.212467        77   65.13064  75.13064
+ 6 + fouls_relative -1  4.119600        76   61.01104  73.0110d
+
+ oklahoma-city-thunder 2015/2016
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  103.92012 105.92012
+ 2 + shots_perc -1 22.494600        80   81.42552  85.42552
+ 3 + d_rebounds -1  6.739165        79   74.68635  80.68635
+ 4  + turnovers -1  9.011291        78   65.67506  73.67506
+ 5     + steals -1  8.297385        77   57.37767  67.37767
+ 6 + points_std -1  6.961690        76   50.41598  62.4159d
+
+ portland-trail-blazers 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   89.97443 91.97443
+ 2 + d_rebounds -1 24.086693        64   65.88773 69.88773
+ 3  + turnovers -1 13.264208        63   52.62352 58.62352
+ 4 + shots_perc -1  7.752172        62   44.87135 52.87135
+ 5   + FT_shots -1  3.484063        61   41.38729 51.38729
+ 6    + assists -1  6.832999        60   34.55429 46.5542d
+
+ portland-trail-blazers 2012/2013
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  110.53407 112.53407
+ 2 + shots_perc -1 20.371790        80   90.16228  94.16228
+ 3 + d_rebounds -1  9.722853        79   80.43943  86.43943
+ 4 + o_rebounds -1  6.112971        78   74.32645  82.32645
+ 5     + steals -1  4.579910        77   69.74654  79.74654
+ 6  + turnovers -1  3.405093        76   66.34145  78.3414d
+
+ portland-trail-blazers 2013/2014
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        81  105.28823 107.28823
+ 2                + shots_perc -1 15.140280        80   90.14795  94.14795
+ 3                + d_rebounds -1  8.093824        79   82.05412  88.05412
+ 4                 + turnovers -1 11.494014        78   70.56011  78.56011
+ 5           + steals_relative -1  7.250107        77   63.31000  73.31000
+ 6 + three_shots_perc_relative -1  6.072710        76   57.23729  69.2372d
+
+ portland-trail-blazers 2014/2015
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  108.74854 110.74854
+ 2         + d_rebounds -1 16.781641        80   91.96689  95.96689
+ 3         + shots_perc -1  7.547547        79   84.41935  90.41935
+ 4  + FT_shots_relative -1  7.717591        78   76.70176  84.70176
+ 5 + turnovers_relative -1  8.186803        77   68.51495  78.51495
+ 6    + steals_relative -1  5.869630        76   62.64532  74.6453d
+
+ portland-trail-blazers 2015/2016
+            Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1               NA        NA        81  113.23672 115.23672
+ 2  + shots_perc -1 22.116716        80   91.12000  95.12000
+ 3  + d_rebounds -1 17.867974        79   73.25203  79.25203
+ 4      + steals -1 17.313081        78   55.93895  63.93895
+ 5 + minutes_std -1  6.108110        77   49.83084  59.83084
+ 6  + o_rebounds -1  9.296836        76   40.53400  52.5340d
+
+ utah-jazz 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   90.94922 92.94922
+ 2 + shots_perc -1 11.647994        64   79.30123 83.30123
+ 3 + d_rebounds -1  9.364610        63   69.93662 75.93662
+ 4 + o_rebounds -1  5.106168        62   64.83045 72.83045
+ 5      + fouls -1  7.104883        61   57.72556 67.72556
+ 6  + turnovers -1  2.490838        60   55.23473 67.2347d
+
+ utah-jazz 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.48094 115.48094
+ 2          + shots_perc -1 21.611518        80   91.86942  95.86942
+ 3 + d_rebounds_relative -1  9.722383        79   82.14704  88.14704
+ 4  + turnovers_relative -1  7.200924        78   74.94611  82.94611
+ 5            + FT_shots -1  4.929567        77   70.01655  80.01655
+ 6              + steals -1  5.049750        76   64.96680  76.9668d
+
+ utah-jazz 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  100.85032 102.85032
+ 2    + three_shots_perc -1 15.034522        80   85.81580  89.81580
+ 3 + d_rebounds_relative -1 11.206439        79   74.60936  80.60936
+ 4          + shots_perc -1  8.043184        78   66.56618  74.56618
+ 5     + steals_relative -1  6.461311        77   60.10487  70.10487
+ 6  + three_points_shots -1  6.740568        76   53.36430  65.3643d
+
+ utah-jazz 2014/2015
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        81  113.23672 115.23672
+ 2                + d_rebounds -1 18.766227        80   94.47049  98.47049
+ 3       + shots_perc_relative -1  9.985228        79   84.48527  90.48527
+ 4                    + steals -1  8.264721        78   76.22054  84.22054
+ 5        + turnovers_relative -1  3.584352        77   72.63619  82.63619
+ 6 + three_shots_perc_relative -1  6.638139        76   65.99805  77.9980d
+
+ utah-jazz 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.62735 115.62735
+ 2 + d_rebounds_relative -1 25.096026        80   88.53133  92.53133
+ 3 + shots_perc_relative -1 20.234226        79   68.29710  74.29710
+ 4              + blocks -1  6.760205        78   61.53690  69.53690
+ 5              + steals -1  5.194191        77   56.34270  66.34270
+ 6             + FT_perc -1  4.256582        76   52.08612  64.08612
+mostInfluentFeatures <- mostInfluentFeaturesTable(games.stats, team_names = teams$PREFIX_2)
+ boston-celtics 2011/2012
+                Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                   NA        NA        65   89.30143 91.30143
+ 2         + assists -1 15.768889        64   73.53254 77.53254
+ 3      + d_rebounds -1 11.485356        63   62.04718 68.04718
+ 4     + minutes_std -1  6.783870        62   55.26331 63.26331
+ 5        + FT_shots -1  9.910545        61   45.35277 55.35277
+ 6 + Players_counter -1  5.271381        60   40.08139 52.0813d
+
+ boston-celtics 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        80  112.27750 114.27750
+ 2         + shots_perc -1 18.768871        79   93.50863  97.50863
+ 3         + d_rebounds -1 11.875310        78   81.63332  87.63332
+ 4             + steals -1  8.473424        77   73.15989  81.15989
+ 5 + turnovers_relative -1  8.146144        76   65.01375  75.01375
+ 6   + assists_relative -1  4.682534        75   60.33122  72.3312d
+
+ boston-celtics 2013/2014
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  100.85032 102.85032
+ 2         + shots_perc -1 21.044660        80   79.80566  83.80566
+ 3         + d_rebounds -1 14.655924        79   65.14974  71.14974
+ 4 + turnovers_relative -1  9.569174        78   55.58056  63.5805d
+
+ boston-celtics 2014/2015
+                    Step Df Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA       NA        81  113.62735 115.62735
+ 2          + shots_perc -1 8.342450        80  105.28490 109.28490
+ 3           + turnovers -1 9.571816        79   95.71309 101.71309
+ 4 + d_rebounds_relative -1 5.988537        78   89.72455  97.72455
+ 5               + shots -1 4.886061        77   84.83849  94.83849
+ 6              + steals -1 8.044661        76   76.79383  88.7938d
+
+ boston-celtics 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  111.27414 113.27414
+ 2 + d_rebounds_relative -1 25.519308        80   85.75484  89.75484
+ 3          + shots_perc -1 14.852489        79   70.90235  76.90235
+ 4               + fouls -1  6.499402        78   64.40295  72.40295
+ 5             + FT_perc -1  5.083690        77   59.31925  69.31925
+ 6              + steals -1  5.176763        76   54.14249  66.1424d
+
+ brooklyn-nets 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   84.01987 86.01987
+ 2 + d_rebounds -1 15.024505        64   68.99537 72.99537
+ 3    + assists -1 20.516391        63   48.47897 54.47897
+ 4 + points_std -1  4.643408        62   43.83557 51.83557
+ 5 + o_rebounds -1  6.188781        61   37.64678 47.64678
+ 6 + shots_perc -1  3.733362        60   33.91342 45.9134d
+
+ brooklyn-nets 2012/2013
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  110.53407 112.53407
+ 2       + d_rebounds -1 17.651744        80   92.88232  96.88232
+ 3       + shots_perc -1 22.964725        79   69.91760  75.91760
+ 4         + FT_shots -1 10.614784        78   59.30282  67.30282
+ 5 + three_shots_perc -1 12.134040        77   47.16878  57.16878
+ 6   + shots_relative -1  7.988811        76   39.17997  51.1799d
+
+ brooklyn-nets 2013/2014
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  113.23672 115.23672
+ 2 + shots_perc -1 32.197893        80   81.03883  85.03883
+ 3 + o_rebounds -1  4.995978        79   76.04285  82.04285
+ 4  + turnovers -1  3.908517        78   72.13433  80.13433
+ 5      + shots -1  4.889326        77   67.24501  77.24501
+ 6 + d_rebounds -1  8.200103        76   59.04490  71.0449d
+
+ brooklyn-nets 2014/2015
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  113.23672 115.23672
+ 2         + shots_perc -1 35.294738        80   77.94198  81.94198
+ 3         + d_rebounds -1  9.178569        79   68.76341  74.76341
+ 4              + fouls -1  8.887997        78   59.87542  67.87542
+ 5             + steals -1  6.050685        77   53.82473  63.82473
+ 6 + turnovers_relative -1  4.591155        76   49.23358  61.2335d
+
+ brooklyn-nets 2015/2016
+                          Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                             NA        NA        81   93.30540 95.30540
+ 2 + three_shots_perc_relative -1 15.967239        80   77.33816 81.33816
+ 3       + d_rebounds_relative -1 19.850938        79   57.48723 63.48723
+ 4       + shots_perc_relative -1  9.302129        78   48.18510 56.18510
+ 5                    + steals -1  9.503120        77   38.68198 48.68198
+ 6          + FT_perc_relative -1  2.412583        76   36.26939 48.2693d
+
+ new-york-knicks 2011/2012
+            Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1               NA        NA        65   90.94922 92.94922
+ 2  + shots_perc -1 14.561265        64   76.38795 80.38795
+ 3  + d_rebounds -1  8.439893        63   67.94806 73.94806
+ 4   + turnovers -1  7.709915        62   60.23815 68.23815
+ 5 + minutes_std -1  4.175709        61   56.06244 66.06244
+ 6    + FT_shots -1  4.421055        60   51.64138 63.6413d
+
+ new-york-knicks 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  105.28823 107.28823
+ 2          + shots_perc -1 25.263307        80   80.02492  84.02492
+ 3  + turnovers_relative -1  6.998212        79   73.02671  79.02671
+ 4 + d_rebounds_relative -1  6.312203        78   66.71451  74.71451
+ 5              + steals -1  4.286042        77   62.42846  72.42846
+ 6    + three_shots_perc -1  5.174918        76   57.25355  69.2535d
+
+ new-york-knicks 2013/2014
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  112.89441 114.89441
+ 2 + shots_perc -1 28.802664        80   84.09174  88.09174
+ 3 + d_rebounds -1  5.475171        79   78.61657  84.61657
+ 4     + steals -1  9.278476        78   69.33810  77.33810
+ 5  + turnovers -1  6.686569        77   62.65153  72.65153
+ 6    + assists -1  2.042417        76   60.60911  72.6091d
+
+ new-york-knicks 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   83.70236 85.70236
+ 2 + shots_perc_relative -1 15.055004        80   68.64735 72.64735
+ 3          + d_rebounds -1 17.889780        79   50.75757 56.75757
+ 4  + turnovers_relative -1  9.234291        78   41.52328 49.52328
+ 5          + o_rebounds -1  3.243846        77   38.27944 48.27944
+ 6      + shots_relative -1  7.011361        76   31.26808 43.2680d
+
+ new-york-knicks 2015/2016
+                Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA        NA        81  109.69256 111.69256
+ 2      + shots_perc -1 25.154897        80   84.53766  88.53766
+ 3        + FT_shots -1 11.057966        79   73.47970  79.47970
+ 4          + blocks -1  5.885151        78   67.59454  75.59454
+ 5       + turnovers -1  4.998035        77   62.59651  72.59651
+ 6 + Players_counter -1  3.943481        76   58.65303  70.6530d
+
+ philadelphia-76ers 2011/2012
+                Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                   NA        NA        65   91.25285 93.25285
+ 2      + shots_perc -1 23.955351        64   67.29750 71.29750
+ 3      + d_rebounds -1  7.707169        63   59.59033 65.59033
+ 4       + turnovers -1  9.332669        62   50.25767 58.25767
+ 5 + steals_relative -1  5.525923        61   44.73174 54.73174
+ 6         + assists -1  5.527370        60   39.20437 51.2043d
+
+ philadelphia-76ers 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        80  109.49597 111.49597
+ 2 + shots_perc_relative -1 19.872559        79   89.62341  93.62341
+ 3 + d_rebounds_relative -1 26.189983        78   63.43342  69.43342
+ 4              + blocks -1  6.825341        77   56.60808  64.60808
+ 5           + turnovers -1  8.386210        76   48.22187  58.22187
+ 6             + FT_perc -1  2.999659        75   45.22221  57.2222d
+
+ philadelphia-76ers 2013/2014
+                   Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                      NA        NA        81   88.77830 90.77830
+ 2         + shots_perc -1 25.635151        80   63.14315 67.14315
+ 3         + d_rebounds -1  9.524879        79   53.61827 59.61827
+ 4 + turnovers_relative -1 13.766315        78   39.85195 47.85195
+ 5             + steals -1 12.132210        77   27.71974 37.71974
+ 6         + o_rebounds -1  4.310650        76   23.40909 35.4090d
+
+ philadelphia-76ers 2014/2015
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        81   86.31154 88.31154
+ 2 + d_rebounds -1 11.658684        80   74.65285 78.65285
+ 3     + blocks -1  8.534287        79   66.11857 72.11857
+ 4     + steals -1  7.019072        78   59.09950 67.09950
+ 5    + assists -1  5.983457        77   53.11604 63.11604
+ 6  + turnovers -1  7.120412        76   45.99563 57.9956d
+
+ philadelphia-76ers 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   60.81033 62.81033
+ 2          + shots_perc -1 10.537617        80   50.27272 54.27272
+ 3              + blocks -1  8.430854        79   41.84186 47.84186
+ 4  + turnovers_relative -1  7.671922        78   34.16994 42.16994
+ 5          + d_rebounds -1  8.457778        77   25.71216 35.71216
+ 6 + o_rebounds_relative -1 12.359198        76   13.35296 25.3529d
+
+ toronto-raptors 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   85.33848 87.33848
+ 2 + d_rebounds_relative -1  8.836770        64   76.50171 80.50171
+ 3 + shots_perc_relative -1  9.416325        63   67.08539 73.08539
+ 4            + FT_shots -1 10.270922        62   56.81446 64.81446
+ 5           + turnovers -1 11.621745        61   45.19272 55.19272
+ 6          + points_std -1  7.093981        60   38.09874 50.0987d
+
+ toronto-raptors 2012/2013
+               Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                  NA        NA        80  110.19437 112.19437
+ 2     + shots_perc -1 16.518011        79   93.67636  97.67636
+ 3      + turnovers -1 10.033198        78   83.64316  89.64316
+ 4     + d_rebounds -1 13.245023        77   70.39814  78.39814
+ 5 + shots_relative -1  7.539801        76   62.85834  72.85834
+ 6         + steals -1  7.624568        75   55.23377  67.2337d
+
+ toronto-raptors 2013/2014
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  111.27414 113.27414
+ 2            + fouls -1 16.131223        80   95.14292  99.14292
+ 3 + three_shots_perc -1 13.342650        79   81.80027  87.80027
+ 4      + minutes_std -1  9.973816        78   71.82645  79.82645
+ 5           + steals -1  5.347359        77   66.47910  76.47910
+ 6       + d_rebounds -1  6.863739        76   59.61536  71.6153d
+
+ toronto-raptors 2014/2015
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        80  109.49597 111.49597
+ 2 + three_shots_perc_relative -1 16.687501        79   92.80847  96.80847
+ 3                  + FT_shots -1  7.418512        78   85.38995  91.38995
+ 4                   + assists -1 10.827952        77   74.56200  82.56200
+ 5                     + fouls -1  5.520171        76   69.04183  79.04183
+ 6           + steals_relative -1  5.722503        75   63.31933  75.3193d
+
+ toronto-raptors 2015/2016
+                Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA        NA        81  102.44155 104.44155
+ 2 + Players_counter -1 13.895321        80   88.54623  92.54623
+ 3      + shots_perc -1 13.365012        79   75.18121  81.18121
+ 4      + d_rebounds -1 19.494249        78   55.68697  63.68697
+ 5           + shots -1  6.284988        77   49.40198  59.40198
+ 6      + o_rebounds -1  9.306246        76   40.09573  52.0957d
+
+ golden-state-warriors 2011/2012
+                    Step Df Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA       NA        65   85.33848 87.33848
+ 2           + turnovers -1 5.383233        64   79.95525 83.95525
+ 3 + d_rebounds_relative -1 7.149399        63   72.80585 78.80585
+ 4 + shots_perc_relative -1 8.343874        62   64.46198 72.46198
+ 5          + o_rebounds -1 9.532606        61   54.92937 64.92937
+ 6     + blocks_relative -1 8.863333        60   46.06604 58.0660d
+
+ golden-state-warriors 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  111.91372 113.91372
+ 2             + assists -1 15.159455        80   96.75426 100.75426
+ 3          + d_rebounds -1  7.423324        79   89.33094  95.33094
+ 4            + FT_shots -1  7.508510        78   81.82243  89.82243
+ 5 + shots_perc_relative -1  9.026181        77   72.79625  82.79625
+ 6    + FT_perc_relative -1  7.122677        76   65.67357  77.6735d
+
+ golden-state-warriors 2013/2014
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  108.74854 110.74854
+ 2            + assists -1 16.727642        80   92.02089  96.02089
+ 3             + blocks -1  9.496749        79   82.52414  88.52414
+ 4 + turnovers_relative -1  9.597211        78   72.92693  80.92693
+ 5    + Players_counter -1  7.797031        77   65.12990  75.12990
+ 6             + steals -1  6.506756        76   58.62315  70.6231d
+
+ golden-state-warriors 2014/2015
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        81   78.03164 80.03164
+ 2       + shots_perc -1 12.262320        80   65.76932 69.76932
+ 3       + d_rebounds -1  5.174059        79   60.59526 66.59526
+ 4           + steals -1  4.746330        78   55.84893 63.84893
+ 5        + turnovers -1  7.209444        77   48.63949 58.63949
+ 6 + FT_perc_relative -1  2.210386        76   46.42910 58.4291d
+
+ golden-state-warriors 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   56.74484 58.74484
+ 2 + shots_perc_relative -1 19.064105        80   37.68073 41.68073
+ 3          + d_rebounds -1  5.912908        79   31.76782 37.76782
+ 4           + turnovers -1  3.805182        78   27.96264 35.96264
+ 5          + o_rebounds -1  3.345728        77   24.61691 34.61691
+ 6               + shots -1  2.845038        76   21.77187 33.7718d
+
+ los-angeles-clippers 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   88.50305 90.50305
+ 2 + shots_perc -1 12.554587        64   75.94846 79.94846
+ 3 + d_rebounds -1  5.764124        63   70.18434 76.18434
+ 4     + steals -1  6.731308        62   63.45303 71.45303
+ 5  + turnovers -1  3.276782        61   60.17625 70.17625
+ 6    + assists -1  2.040413        60   58.13584 70.1358d
+
+ los-angeles-clippers 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  102.44155 104.44155
+ 2         + shots_perc -1 20.373840        80   82.06771  86.06771
+ 3         + d_rebounds -1 18.338033        79   63.72967  69.72967
+ 4 + turnovers_relative -1 16.748399        78   46.98128  54.98128
+ 5  + FT_shots_relative -1  9.212489        77   37.76879  47.76879
+ 6    + steals_relative -1  4.611686        76   33.15710  45.1571d
+
+ los-angeles-clippers 2013/2014
+                            Step Df  Deviance Resid. Df Resid. Dev
+ 1                               NA        NA        81  100.85032
+ 2                  + shots_perc -1 38.296069        80   62.55425
+ 3         + d_rebounds_relative -1  7.604351        79   54.94990
+ 4 + three_points_shots_relative -1  5.217775        78   49.73213
+ 5              + fouls_relative -1  3.772485        77   45.95964
+ 6             + Players_counter -1  3.718454        76   42.24119
+         AIC
+ 1 102.85032
+ 2  66.55425
+ 3  60.94990
+ 4  57.73213
+ 5  55.95964
+ 6  54.2411d
+
+ los-angeles-clippers 2014/2015
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  102.44155 104.44155
+ 2         + shots_perc -1 15.249116        80   87.19243  91.19243
+ 3         + d_rebounds -1 10.721057        79   76.47137  82.47137
+ 4 + turnovers_relative -1  7.585488        78   68.88589  76.88589
+ 5    + steals_relative -1  7.273361        77   61.61253  71.61253
+ 6            + FT_perc -1  4.592899        76   57.01963  69.0196d
+
+ los-angeles-clippers 2015/2016
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  106.54786 108.54786
+ 2         + d_rebounds -1 22.744381        80   83.80347  87.80347
+ 3         + shots_perc -1 13.556276        79   70.24720  76.24720
+ 4            + FT_perc -1  4.421758        78   65.82544  73.82544
+ 5             + steals -1  3.258975        77   62.56647  72.56647
+ 6 + three_points_shots -1  4.441940        76   58.12453  70.1245d
+
+ los-angeles-lakers 2011/2012
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        65   87.57773 89.57773
+ 2       + d_rebounds -1 19.238708        64   68.33902 72.33902
+ 3       + shots_perc -1 15.325171        63   53.01385 59.01385
+ 4 + three_shots_perc -1 11.210254        62   41.80359 49.80359
+ 5            + fouls -1  5.949416        61   35.85418 45.85418
+ 6           + steals -1  8.078197        60   27.77598 39.7759d
+
+ los-angeles-lakers 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  112.89441 114.89441
+ 2   + assists_relative -1 21.396899        80   91.49751  95.49751
+ 3         + d_rebounds -1 17.477133        79   74.02038  80.02038
+ 4         + shots_perc -1  7.281891        78   66.73848  74.73848
+ 5     + fouls_relative -1  9.174343        77   57.56414  67.56414
+ 6 + three_points_shots -1  2.767397        76   54.79674  66.7967d
+
+ los-angeles-lakers 2013/2014
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  103.92012 105.92012
+ 2       + shots_perc -1 18.028301        80   85.89181  89.89181
+ 3       + d_rebounds -1 11.064138        79   74.82768  80.82768
+ 4 + three_shots_perc -1  4.693873        78   70.13380  78.13380
+ 5          + FT_perc -1  5.016284        77   65.11752  75.11752
+ 6      + minutes_std -1  4.937710        76   60.17981  72.1798d
+
+ los-angeles-lakers 2014/2015
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        81   93.30540 95.30540
+ 2          + assists -1 10.477743        80   82.82766 86.82766
+ 3       + d_rebounds -1  6.508905        79   76.31876 82.31876
+ 4       + points_std -1  7.260459        78   69.05830 77.05830
+ 5           + steals -1  6.528210        77   62.53009 72.53009
+ 6 + FT_perc_relative -1  3.461898        76   59.06819 71.0681d
+
+ los-angeles-lakers 2015/2016
+                Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                   NA        NA        81   83.70236 85.70236
+ 2 + Players_counter -1 10.804586        80   72.89777 76.89777
+ 3      + d_rebounds -1  4.793785        79   68.10399 74.10399
+ 4      + shots_perc -1  7.322778        78   60.78121 68.78121
+ 5        + FT_shots -1  5.566800        77   55.21441 65.21441
+ 6 + steals_relative -1  7.911624        76   47.30279 59.3027d
+
+ phoenix-suns 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   91.49543 93.49543
+ 2 + shots_perc -1  7.063397        64   84.43203 88.43203
+ 3 + d_rebounds -1  7.108952        63   77.32308 83.32308
+ 4  + turnovers -1 11.173788        62   66.14929 74.14929
+ 5    + assists -1  2.532465        61   63.61682 73.61682
+ 6      + shots -1  3.001075        60   60.61575 72.6157d
+
+ phoenix-suns 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  100.85032 102.85032
+ 2 + shots_perc_relative -1 10.392742        80   90.45758  94.45758
+ 3  + turnovers_relative -1  5.560095        79   84.89748  90.89748
+ 4          + d_rebounds -1  6.918701        78   77.97878  85.97878
+ 5              + steals -1 11.663071        77   66.31571  76.31571
+ 6          + o_rebounds -1  5.174055        76   61.14166  73.1416d
+
+ phoenix-suns 2013/2014
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  111.27414 113.27414
+ 2 + d_rebounds -1 22.702628        80   88.57152  92.57152
+ 3 + shots_perc -1 29.282010        79   59.28951  65.28951
+ 4  + turnovers -1  7.062980        78   52.22653  60.22653
+ 5   + FT_shots -1  7.974953        77   44.25157  54.25157
+ 6     + blocks -1  9.361255        76   34.89032  46.8903d
+
+ phoenix-suns 2014/2015
+               Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                  NA        NA        80  111.98100 113.98100
+ 2     + shots_perc -1 24.496883        79   87.48412  91.48412
+ 3     + d_rebounds -1 12.914499        78   74.56962  80.56962
+ 4 + fouls_relative -1  4.986300        77   69.58332  77.58332
+ 5       + FT_shots -1  9.015455        76   60.56787  70.56787
+ 6        + FT_perc -1  8.619968        75   51.94790  63.9479d
+
+ phoenix-suns 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   97.31980 99.31980
+ 2          + shots_perc -1 14.114019        80   83.20579 87.20579
+ 3          + d_rebounds -1 22.927275        79   60.27851 66.27851
+ 4     + steals_relative -1 10.721616        78   49.55689 57.55689
+ 5 + o_rebounds_relative -1 11.185170        77   38.37172 48.37172
+ 6              + blocks -1  7.347622        76   31.02410 43.0241d
+
+ sacramento-kings 2011/2012
+                   Step Df Deviance Resid. Df Resid. Dev      AIC
+ 1                      NA       NA        65   84.01987 86.01987
+ 2          + turnovers -1 6.832263        64   77.18761 81.18761
+ 3        + minutes_std -1 6.958053        63   70.22955 76.22955
+ 4 + three_points_shots -1 4.902762        62   65.32679 73.32679
+ 5           + FT_shots -1 4.796715        61   60.53008 70.53008
+ 6              + fouls -1 6.340563        60   54.18951 66.1895d
+
+ sacramento-kings 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  105.28823 107.28823
+ 2         + shots_perc -1 37.784516        80   67.50371  71.50371
+ 3         + d_rebounds -1 11.412994        79   56.09072  62.09072
+ 4 + turnovers_relative -1  7.302009        78   48.78871  56.78871
+ 5    + steals_relative -1  8.682057        77   40.10665  50.10665
+ 6        + minutes_std -1  7.457902        76   32.64875  44.6487d
+
+ sacramento-kings 2013/2014
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  105.28823 107.28823
+ 2       + shots_perc -1 18.345344        80   86.94288  90.94288
+ 3       + d_rebounds -1 14.515954        79   72.42693  78.42693
+ 4         + FT_shots -1 14.207303        78   58.21963  66.21963
+ 5      + minutes_std -1  5.397605        77   52.82202  62.82202
+ 6 + three_shots_perc -1  4.455965        76   48.36606  60.3660d
+
+ sacramento-kings 2014/2015
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  106.54786 108.54786
+ 2         + points_std -1 10.702339        80   95.84552  99.84552
+ 3         + d_rebounds -1 10.189394        79   85.65612  91.65612
+ 4 + turnovers_relative -1  8.882657        78   76.77347  84.77347
+ 5         + shots_perc -1  9.411142        77   67.36232  77.36232
+ 6    + steals_relative -1  6.262929        76   61.09939  73.0993d
+
+ sacramento-kings 2015/2016
+                Step Df Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA       NA        81  110.53407 112.53407
+ 2      + shots_perc -1 14.68598        80   95.84808  99.84808
+ 3      + d_rebounds -1 10.59301        79   85.25508  91.25508
+ 4           + fouls -1 16.43680        78   68.81828  76.81828
+ 5        + FT_shots -1 12.40601        77   56.41227  66.41227
+ 6 + Players_counter -1 12.39227        76   44.02000  56.0200d
+
+ chicago-bulls 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   73.10929 75.10929
+ 2             + assists -1 14.093976        64   59.01531 63.01531
+ 3 + d_rebounds_relative -1 13.805663        63   45.20965 51.20965
+ 4          + points_std -1  6.386209        62   38.82344 46.82344
+ 5               + fouls -1  6.028985        61   32.79445 42.79445
+ 6              + steals -1  4.900093        60   27.89436 39.8943d
+
+ chicago-bulls 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  112.89441 114.89441
+ 2 + shots_perc_relative -1 21.300372        80   91.59403  95.59403
+ 3          + d_rebounds -1 17.809700        79   73.78433  79.78433
+ 4   + FT_shots_relative -1  7.404808        78   66.37953  74.37953
+ 5           + turnovers -1  7.214081        77   59.16545  69.16545
+ 6             + FT_perc -1  4.966440        76   54.19901  66.1990d
+
+ chicago-bulls 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  111.27414 113.27414
+ 2 + shots_perc_relative -1 29.093642        80   82.18050  86.18050
+ 3              + blocks -1 14.564066        79   67.61644  73.61644
+ 4          + d_rebounds -1  8.687910        78   58.92853  66.92853
+ 5     + steals_relative -1  8.292689        77   50.63584  60.63584
+ 6           + turnovers -1  4.899848        76   45.73599  57.7359d
+
+ chicago-bulls 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  109.69256 111.69256
+ 2          + shots_perc -1 17.725160        80   91.96740  95.96740
+ 3               + fouls -1  9.565870        79   82.40153  88.40153
+ 4             + FT_perc -1  9.881201        78   72.52033  80.52033
+ 5 + d_rebounds_relative -1  4.726290        77   67.79404  77.79404
+ 6          + o_rebounds -1  5.613123        76   62.18091  74.1809d
+
+ chicago-bulls 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.62735 115.62735
+ 2 + shots_perc_relative -1 18.153663        80   95.47369  99.47369
+ 3 + d_rebounds_relative -1 25.412119        79   70.06157  76.06157
+ 4      + fouls_relative -1  5.324046        78   64.73752  72.73752
+ 5  + turnovers_relative -1  3.939894        77   60.79763  70.79763
+ 6            + FT_shots -1  3.850087        76   56.94754  68.9475d
+
+ cleveland-cavaliers 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   82.56486 84.56486
+ 2          + shots_perc -1 12.664399        64   69.90046 73.90046
+ 3           + turnovers -1  8.919119        63   60.98134 66.98134
+ 4     + Players_counter -1  7.244035        62   53.73731 61.73731
+ 5              + steals -1  7.481364        61   46.25594 56.25594
+ 6 + d_rebounds_relative -1  6.735761        60   39.52018 51.5201d
+
+ cleveland-cavaliers 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81   99.14398 101.14398
+ 2         + d_rebounds -1 11.775050        80   87.36893  91.36893
+ 3           + FT_shots -1 11.292877        79   76.07606  82.07606
+ 4   + three_shots_perc -1  7.924300        78   68.15176  76.15176
+ 5 + turnovers_relative -1  7.818110        77   60.33365  70.33365
+ 6         + points_std -1  4.690197        76   55.64345  67.6434d
+
+ cleveland-cavaliers 2013/2014
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        80  108.69528 110.69528
+ 2                + d_rebounds -1 27.878923        79   80.81635  84.81635
+ 3       + shots_perc_relative -1 15.047372        78   65.76898  71.76898
+ 4       + o_rebounds_relative -1 11.192535        77   54.57645  62.57645
+ 5 + three_shots_perc_relative -1  5.889743        76   48.68670  58.68670
+ 6                     + shots -1  9.846216        75   38.84049  50.8404d
+
+ cleveland-cavaliers 2014/2015
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  106.54786 108.54786
+ 2       + shots_perc -1 33.942318        80   72.60554  76.60554
+ 3       + d_rebounds -1 11.401410        79   61.20413  67.20413
+ 4        + turnovers -1 10.441925        78   50.76220  58.76220
+ 5 + three_shots_perc -1  3.494516        77   47.26769  57.26769
+ 6         + FT_shots -1  5.922091        76   41.34560  53.3456d
+
+ cleveland-cavaliers 2015/2016
+            Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1               NA        NA        81  100.85032 102.85032
+ 2  + shots_perc -1 17.927576        80   82.92275  86.92275
+ 3  + d_rebounds -1 11.700961        79   71.22178  77.22178
+ 4       + fouls -1 13.384838        78   57.83695  65.83695
+ 5  + o_rebounds -1 21.988610        77   35.84834  45.84834
+ 6 + minutes_std -1  5.483922        76   30.36441  42.3644d
+
+ detroit-pistons 2011/2012
+                   Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                      NA        NA        65   87.57773 89.57773
+ 2         + d_rebounds -1 23.201581        64   64.37614 68.37614
+ 3         + shots_perc -1 20.803061        63   43.57308 49.57308
+ 4  + FT_shots_relative -1  8.920028        62   34.65306 42.65306
+ 5              + fouls -1  5.596878        61   29.05618 39.05618
+ 6 + three_points_shots -1  3.622034        60   25.43414 37.4341d
+
+ detroit-pistons 2012/2013
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        81  106.54786 108.54786
+ 2                + shots_perc -1 22.561368        80   83.98649  87.98649
+ 3                + d_rebounds -1 26.263540        79   57.72295  63.72295
+ 4        + turnovers_relative -1  7.887275        78   49.83567  57.83567
+ 5            + fouls_relative -1  3.245559        77   46.59011  56.59011
+ 6 + three_shots_perc_relative -1  3.892419        76   42.69769  54.6976d
+
+ detroit-pistons 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  106.54786 108.54786
+ 2          + shots_perc -1 16.909351        80   89.63850  93.63850
+ 3 + d_rebounds_relative -1 19.080210        79   70.55829  76.55829
+ 4              + steals -1  8.771649        78   61.78665  69.78665
+ 5    + FT_perc_relative -1  5.992027        77   55.79462  65.79462
+ 6          + o_rebounds -1  3.290564        76   52.50405  64.5040d
+
+ detroit-pistons 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  109.69256 111.69256
+ 2          + shots_perc -1 21.110649        80   88.58191  92.58191
+ 3 + d_rebounds_relative -1 13.619903        79   74.96201  80.96201
+ 4              + steals -1  8.386844        78   66.57516  74.57516
+ 5          + points_std -1  7.691304        77   58.88386  68.88386
+ 6               + fouls -1  7.531330        76   51.35253  63.3525d
+
+ detroit-pistons 2015/2016
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  113.23672 115.23672
+ 2 + three_shots_perc -1 26.611329        80   86.62539  90.62539
+ 3       + d_rebounds -1 14.586627        79   72.03876  78.03876
+ 4           + steals -1  9.015116        78   63.02365  71.02365
+ 5        + turnovers -1  6.555079        77   56.46857  66.46857
+ 6       + o_rebounds -1  4.815006        76   51.65356  63.6535d
+
+ indiana-pacers 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   86.52359 88.52359
+ 2    + assists -1 19.739706        64   66.78389 70.78389
+ 3 + d_rebounds -1 12.956297        63   53.82759 59.82759
+ 4  + turnovers -1  4.420304        62   49.40729 57.40729
+ 5 + o_rebounds -1  3.445569        61   45.96172 55.96172
+ 6      + shots -1  5.226133        60   40.73558 52.7355d
+
+ indiana-pacers 2012/2013
+                            Step Df Deviance Resid. Df Resid. Dev       AIC
+ 1                               NA       NA        80  108.69528 110.69528
+ 2                     + assists -1 13.28733        79   95.40795  99.40795
+ 3                      + steals -1 10.94725        78   84.46069  90.46069
+ 4                  + d_rebounds -1 18.67090        77   65.78980  73.78980
+ 5                  + shots_perc -1 11.68087        76   54.10893  64.10893
+ 6 + three_points_shots_relative -1  5.78887        75   48.32006  60.3200d
+
+ indiana-pacers 2013/2014
+               Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                  NA        NA        81  102.44155 104.44155
+ 2        + assists -1 27.918750        80   74.52280  78.52280
+ 3 + fouls_relative -1 16.951622        79   57.57118  63.57118
+ 4     + d_rebounds -1 10.205191        78   47.36598  55.36598
+ 5     + shots_perc -1  5.230647        77   42.13534  52.13534
+ 6     + o_rebounds -1  8.753286        76   33.38205  45.3820d
+
+ indiana-pacers 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        80  111.98100 113.98100
+ 2 + shots_perc_relative -1 19.385058        79   92.59595  96.59595
+ 3 + d_rebounds_relative -1 13.546255        78   79.04969  85.04969
+ 4           + turnovers -1  9.902553        77   69.14714  77.14714
+ 5            + FT_shots -1  9.291485        76   59.85565  69.85565
+ 6          + o_rebounds -1  6.739622        75   53.11603  65.1160d
+
+ indiana-pacers 2015/2016
+                Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA        NA        81  112.89441 114.89441
+ 2      + d_rebounds -1 17.793184        80   95.10122  99.10122
+ 3      + shots_perc -1 21.132141        79   73.96908  79.96908
+ 4          + steals -1  5.437534        78   68.53155  76.53155
+ 5 + Players_counter -1  4.633182        77   63.89837  73.89837
+ 6           + fouls -1  4.356879        76   59.54149  71.5414d
+
+ milwaukee-bucks 2011/2012
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        65   91.25285 93.25285
+ 2       + shots_perc -1 18.748676        64   72.50418 76.50418
+ 3         + FT_shots -1  7.051787        63   65.45239 71.45239
+ 4 + assists_relative -1  6.414782        62   59.03761 67.03761
+ 5       + d_rebounds -1  4.009848        61   55.02776 65.02776
+ 6 + FT_perc_relative -1  3.136037        60   51.89173 63.8917d
+
+ milwaukee-bucks 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.23672 115.23672
+ 2          + shots_perc -1 21.045989        80   92.19073  96.19073
+ 3            + FT_shots -1 13.847811        79   78.34292  84.34292
+ 4              + steals -1  6.384266        78   71.95866  79.95866
+ 5 + o_rebounds_relative -1  7.901750        77   64.05691  74.0569d
+
+ milwaukee-bucks 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   78.03164 80.03164
+ 2 + shots_perc_relative -1 12.439449        80   65.59219 69.59219
+ 3           + turnovers -1  5.736871        79   59.85532 65.85532
+ 4          + points_std -1  4.667316        78   55.18800 63.18800
+ 5              + blocks -1  4.755033        77   50.43297 60.43297
+ 6    + three_shots_perc -1  5.722644        76   44.71033 56.7103d
+
+ milwaukee-bucks 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.67614 115.67614
+ 2    + three_shots_perc -1 15.507404        80   98.16873 102.16873
+ 3          + d_rebounds -1  7.683286        79   90.48545  96.48545
+ 4 + shots_perc_relative -1  4.876557        78   85.60889  93.60889
+ 5              + steals -1  3.502032        77   82.10686  92.10686
+ 6  + three_points_shots -1  2.162403        76   79.94446  91.9444d
+
+ milwaukee-bucks 2015/2016
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  110.53407 112.53407
+ 2           + blocks -1  9.747088        80  100.78698 104.78698
+ 3         + FT_shots -1  8.367972        79   92.41901  98.41901
+ 4 + three_shots_perc -1 11.820973        78   80.59803  88.59803
+ 5          + assists -1  5.696217        77   74.90182  84.90182
+ 6            + fouls -1  5.850725        76   69.05109  81.0510d
+
+ dallas-mavericks 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   90.94922 92.94922
+ 2          + shots_perc -1 23.994115        64   66.95510 70.95510
+ 3          + d_rebounds -1 14.666660        63   52.28844 58.28844
+ 4            + FT_shots -1  9.929835        62   42.35861 50.35861
+ 5 + o_rebounds_relative -1  6.611498        61   35.74711 45.74711
+ 6           + turnovers -1  3.863330        60   31.88378 43.8837d
+
+ dallas-mavericks 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  113.67614 115.67614
+ 2         + shots_perc -1 43.831731        80   69.84441  73.84441
+ 3         + o_rebounds -1 10.847716        79   58.99669  64.99669
+ 4 + turnovers_relative -1 12.517332        78   46.47936  54.47936
+ 5    + blocks_relative -1  6.066181        77   40.41318  50.41318
+ 6           + FT_shots -1  7.715341        76   32.69784  44.6978d
+
+ dallas-mavericks 2013/2014
+                   Step Df Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA       NA        81  110.53407 112.53407
+ 2              + shots -1 12.99753        80   97.53654 101.53654
+ 3   + assists_relative -1 19.47805        79   78.05848  84.05848
+ 4         + d_rebounds -1  8.22294        78   69.83554  77.83554
+ 5 + turnovers_relative -1 13.82591        77   56.00963  66.00963
+ 6    + Players_counter -1  2.71115        76   53.29848  65.2984d
+
+ dallas-mavericks 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  109.69256 111.69256
+ 2          + shots_perc -1 27.136579        80   82.55598  86.55598
+ 3 + d_rebounds_relative -1 10.900104        79   71.65588  77.65588
+ 4     + steals_relative -1  9.507231        78   62.14864  70.14864
+ 5           + turnovers -1  8.872370        77   53.27627  63.27627
+ 6     + blocks_relative -1  4.278766        76   48.99751  60.9975d
+
+ dallas-mavericks 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.62735 115.62735
+ 2 + shots_perc_relative -1 11.033426        80  102.59393 106.59393
+ 3              + steals -1  8.689173        79   93.90475  99.90475
+ 4          + d_rebounds -1  7.124444        78   86.78031  94.78031
+ 5           + turnovers -1  5.103041        77   81.67727  91.67727
+ 6      + shots_relative -1  5.514081        76   76.16319  88.1631d
+
+ houston-rockets 2011/2012
+                   Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                      NA        NA        65   91.43481 93.43481
+ 2         + shots_perc -1 10.200314        64   81.23450 85.23450
+ 3         + d_rebounds -1 11.358540        63   69.87596 75.87596
+ 4              + fouls -1  7.779454        62   62.09651 70.09651
+ 5   + three_shots_perc -1  6.055303        61   56.04120 66.04120
+ 6 + three_points_shots -1  3.324369        60   52.71683 64.7168d
+
+ houston-rockets 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  112.89441 114.89441
+ 2          + shots_perc -1 23.689093        80   89.20531  93.20531
+ 3 + d_rebounds_relative -1 17.261480        79   71.94383  77.94383
+ 4             + FT_perc -1  5.468178        78   66.47566  74.47566
+ 5      + fouls_relative -1  4.632942        77   61.84271  71.84271
+ 6          + o_rebounds -1  5.613608        76   56.22911  68.2291d
+
+ houston-rockets 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  105.28823 107.28823
+ 2          + shots_perc -1 33.958063        80   71.33016  75.33016
+ 3 + d_rebounds_relative -1 19.756826        79   51.57334  57.57334
+ 4           + turnovers -1  3.933131        78   47.64021  55.64021
+ 5   + FT_shots_relative -1  3.501200        77   44.13901  54.13901
+ 6         + minutes_std -1  2.919834        76   41.21917  53.2191d
+
+ houston-rockets 2014/2015
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        81  102.44155 104.44155
+ 2                + d_rebounds -1 20.593636        80   81.84791  85.84791
+ 3                + points_std -1 12.546051        79   69.30186  75.30186
+ 4 + three_shots_perc_relative -1  8.580538        78   60.72132  68.72132
+ 5                    + blocks -1  4.159622        77   56.56170  66.56170
+ 6                + o_rebounds -1  3.181505        76   53.38020  65.3802d
+
+ houston-rockets 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.67614 115.67614
+ 2          + shots_perc -1 11.357618        80  102.31852 106.31852
+ 3          + d_rebounds -1  9.046852        79   93.27167  99.27167
+ 4 + o_rebounds_relative -1 10.078571        78   83.19310  91.19310
+ 5              + steals -1  3.731365        77   79.46173  89.46173
+ 6     + Players_counter -1  4.540954        76   74.92078  86.9207d
+
+ memphis-grizzlies 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   87.57773 89.57773
+ 2 + shots_perc_relative -1 19.581114        64   67.99661 71.99661
+ 3               + fouls -1 12.739376        63   55.25724 61.25724
+ 4          + d_rebounds -1  7.838624        62   47.41861 55.41861
+ 5          + o_rebounds -1  4.795471        61   42.62314 52.62314
+ 6             + FT_perc -1  4.934740        60   37.68840 49.6884d
+
+ memphis-grizzlies 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  102.44155 104.44155
+ 2          + d_rebounds -1 19.011578        80   83.42997  87.42997
+ 3 + shots_perc_relative -1 15.113669        79   68.31630  74.31630
+ 4              + steals -1  5.301048        78   63.01525  71.01525
+ 5              + blocks -1  4.879188        77   58.13606  68.13606
+ 6            + FT_shots -1  5.836475        76   52.29959  64.2995d
+
+ memphis-grizzlies 2013/2014
+                  Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                     NA        NA        81  109.69256 111.69256
+ 2        + d_rebounds -1 28.862602        80   80.82996  84.82996
+ 3        + shots_perc -1 16.009698        79   64.82026  70.82026
+ 4            + blocks -1  6.704337        78   58.11592  66.11592
+ 5             + fouls -1  5.202108        77   52.91381  62.91381
+ 6 + FT_shots_relative -1  4.048359        76   48.86545  60.8654d
+
+ memphis-grizzlies 2014/2015
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        81  103.92012 105.92012
+ 2                + shots_perc -1 15.425149        80   88.49497  92.49497
+ 3                + d_rebounds -1 16.045235        79   72.44973  78.44973
+ 4                  + FT_shots -1  6.218804        78   66.23093  74.23093
+ 5 + three_shots_perc_relative -1  6.913282        77   59.31764  69.31764
+ 6        + turnovers_relative -1  3.903113        76   55.41453  67.4145d
+
+ memphis-grizzlies 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.62735 115.62735
+ 2 + shots_perc_relative -1 20.138667        80   93.48869  97.48869
+ 3             + FT_perc -1  9.442713        79   84.04597  90.04597
+ 4 + d_rebounds_relative -1  9.437688        78   74.60828  82.60828
+ 5          + points_std -1  7.240005        77   67.36828  77.36828
+ 6             + assists -1  6.121530        76   61.24675  73.2467d
+
+ new-orleans-pelicans 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   82.56486 84.56486
+ 2 + d_rebounds -1  5.477497        64   77.08736 81.08736
+ 3 + shots_perc -1  8.336734        63   68.75063 74.75063
+ 4     + steals -1 10.632004        62   58.11862 66.11862
+ 5 + o_rebounds -1  5.073097        61   53.04553 63.04553
+ 6      + shots -1  2.397013        60   50.64851 62.6485d
+
+ new-orleans-pelicans 2012/2013
+                Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA        NA        81  103.92012 105.92012
+ 2      + shots_perc -1 11.998901        80   91.92121  95.92121
+ 3           + fouls -1  8.260889        79   83.66032  89.66032
+ 4      + o_rebounds -1  7.191918        78   76.46841  84.46841
+ 5      + d_rebounds -1  8.826210        77   67.64220  77.64220
+ 6 + steals_relative -1  7.895063        76   59.74713  71.7471d
+
+ new-orleans-pelicans 2013/2014
+                Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA        NA        81  111.27414 113.27414
+ 2      + shots_perc -1 24.276483        80   86.99766  90.99766
+ 3      + o_rebounds -1 11.045388        79   75.95227  81.95227
+ 4          + blocks -1 10.361698        78   65.59058  73.59058
+ 5       + turnovers -1  6.698897        77   58.89168  68.89168
+ 6 + steals_relative -1  8.042386        76   50.84929  62.8492d
+
+ new-orleans-pelicans 2014/2015
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  112.89441 114.89441
+ 2 + shots_perc -1 26.835036        80   86.05937  90.05937
+ 3 + d_rebounds -1  8.000519        79   78.05885  84.05885
+ 4  + turnovers -1  9.680468        78   68.37838  76.37838
+ 5     + blocks -1  6.766973        77   61.61141  71.6114d
+
+ new-orleans-pelicans 2015/2016
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  107.70077 109.70077
+ 2       + shots_perc -1 40.974951        80   66.72582  70.72582
+ 3       + d_rebounds -1 10.145771        79   56.58004  62.58004
+ 4 + three_shots_perc -1 13.128768        78   43.45128  51.45128
+ 5           + steals -1  9.725222        77   33.72605  43.72605
+ 6            + fouls -1  4.553660        76   29.17240  41.1724d
+
+ san-antonio-spurs 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   73.10929 75.10929
+ 2          + d_rebounds -1 10.835152        64   62.27413 66.27413
+ 3 + shots_perc_relative -1  7.842017        63   54.43212 60.43212
+ 4              + steals -1  5.560714        62   48.87140 56.87140
+ 5    + FT_perc_relative -1  7.071944        61   41.79946 51.79946
+ 6 + o_rebounds_relative -1  3.106940        60   38.69252 50.6925d
+
+ san-antonio-spurs 2012/2013
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81   99.14398 101.14398
+ 2         + shots_perc -1 37.264738        80   61.87925  65.87925
+ 3         + d_rebounds -1 12.657139        79   49.22211  55.22211
+ 4             + steals -1  4.389498        78   44.83261  52.83261
+ 5          + turnovers -1  2.936633        77   41.89598  51.89598
+ 6 + three_points_shots -1  3.375226        76   38.52075  50.5207d
+
+ san-antonio-spurs 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   91.10800 93.10800
+ 2          + d_rebounds -1 30.158767        80   60.94924 64.94924
+ 3              + steals -1 14.185216        79   46.76402 52.76402
+ 4 + shots_perc_relative -1 19.289329        78   27.47469 35.47469
+ 5            + FT_shots -1  5.243456        77   22.23123 32.23123
+ 6     + Players_counter -1  2.442215        76   19.78902 31.7890d
+
+ san-antonio-spurs 2014/2015
+                   Step Df Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA       NA        81  103.92012 105.92012
+ 2         + shots_perc -1 12.94320        80   90.97691  94.97691
+ 3             + steals -1 10.41499        79   80.56192  86.56192
+ 4 + turnovers_relative -1 11.47090        78   69.09102  77.09102
+ 5         + d_rebounds -1 11.13108        77   57.95994  67.95994
+ 6     + shots_relative -1  8.64860        76   49.31134  61.3113d
+
+ san-antonio-spurs 2015/2016
+                          Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                             NA        NA        81   78.03164 80.03164
+ 2                + shots_perc -1 21.860960        80   56.17068 60.17068
+ 3                + d_rebounds -1 12.668083        79   43.50260 49.50260
+ 4       + o_rebounds_relative -1  2.761086        78   40.74151 48.74151
+ 5 + three_shots_perc_relative -1  2.977586        77   37.76392 47.76392
+ 6                    + steals -1  2.957658        76   34.80627 46.8062d
+
+ atlanta-hawks 2011/2012
+                   Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                      NA        NA        64   87.49152 89.49152
+ 2         + shots_perc -1 26.798768        63   60.69275 64.69275
+ 3         + d_rebounds -1  8.573976        62   52.11877 58.11877
+ 4 + turnovers_relative -1  9.400157        61   42.71862 50.71862
+ 5         + o_rebounds -1  7.728115        60   34.99050 44.99050
+ 6             + steals -1  8.840143        59   26.15036 38.1503d
+
+ atlanta-hawks 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.23672 115.23672
+ 2 + shots_perc_relative -1 18.195738        80   95.04098  99.04098
+ 3          + o_rebounds -1 11.511565        79   83.52942  89.52942
+ 4          + d_rebounds -1 10.908870        78   72.62055  80.62055
+ 5     + steals_relative -1 18.497152        77   54.12340  64.12340
+ 6           + turnovers -1  5.665902        76   48.45749  60.4574d
+
+ atlanta-hawks 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.23672 115.23672
+ 2          + d_rebounds -1 15.548504        80   97.68822 101.68822
+ 3 + shots_perc_relative -1 12.359409        79   85.32881  91.32881
+ 4           + turnovers -1  8.078032        78   77.25078  85.25078
+ 5          + points_std -1  4.346343        77   72.90443  82.90443
+ 6      + fouls_relative -1  5.509920        76   67.39451  79.3945d
+
+ atlanta-hawks 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   95.37474 97.37474
+ 2 + shots_perc_relative -1 11.740206        80   83.63453 87.63453
+ 3          + d_rebounds -1 14.053092        79   69.58144 75.58144
+ 4              + steals -1  8.455407        78   61.12604 69.12604
+ 5          + points_std -1  5.170626        77   55.95541 65.95541
+ 6          + o_rebounds -1  3.499404        76   52.45601 64.4560d
+
+ atlanta-hawks 2015/2016
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  111.27414 113.27414
+ 2         + shots_perc -1 30.339250        80   80.93489  84.93489
+ 3 + turnovers_relative -1 15.864166        79   65.07073  71.07073
+ 4         + d_rebounds -1 15.937608        78   49.13312  57.13312
+ 5         + o_rebounds -1 16.890605        77   32.24251  42.24251
+ 6        + minutes_std -1  3.943366        76   28.29915  40.2991d
+
+ charlotte-hornets 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   44.64227 46.64227
+ 2 + shots_perc_relative -1 19.588725        64   25.05354 29.05354
+ 3          + d_rebounds -1  3.027982        63   22.02556 28.0255d
+
+ charlotte-hornets 2012/2013
+                  Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                     NA        NA        81   93.30540 95.30540
+ 2        + d_rebounds -1 19.417615        80   73.88779 77.88779
+ 3        + shots_perc -1 10.043866        79   63.84392 69.84392
+ 4            + steals -1 11.785839        78   52.05808 60.05808
+ 5 + FT_shots_relative -1  9.018968        77   43.03911 53.03911
+ 6  + FT_perc_relative -1  3.926594        76   39.11252 51.1125d
+
+ charlotte-hornets 2013/2014
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  113.48094 115.48094
+ 2       + d_rebounds -1 22.044953        80   91.43599  95.43599
+ 3       + shots_perc -1 19.828016        79   71.60797  77.60797
+ 4         + FT_shots -1 13.667037        78   57.94093  65.94093
+ 5            + fouls -1  4.356278        77   53.58465  63.58465
+ 6 + three_shots_perc -1  3.682059        76   49.90260  61.9026d
+
+ charlotte-hornets 2014/2015
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  110.53407 112.53407
+ 2         + shots_perc -1 16.848224        80   93.68584  97.68584
+ 3         + o_rebounds -1 19.269768        79   74.41608  80.41608
+ 4         + d_rebounds -1 12.366131        78   62.04995  70.04995
+ 5 + three_points_shots -1  5.960766        77   56.08918  66.08918
+ 6         + points_std -1  6.070220        76   50.01896  62.0189d
+
+ charlotte-hornets 2015/2016
+                 Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                    NA        NA        81  111.27414 113.27414
+ 2       + shots_perc -1 29.443156        80   81.83099  85.83099
+ 3       + d_rebounds -1 13.205212        79   68.62578  74.62578
+ 4       + points_std -1  9.900986        78   58.72479  66.72479
+ 5  + steals_relative -1  5.763736        77   52.96105  62.96105
+ 6 + three_shots_perc -1  3.427646        76   49.53341  61.5334d
+
+ miami-heat 2011/2012
+                Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                   NA        NA        65   80.97013 82.97013
+ 2      + shots_perc -1 21.885258        64   59.08487 63.08487
+ 3      + d_rebounds -1  7.048438        63   52.03643 58.03643
+ 4       + turnovers -1  7.332674        62   44.70376 52.70376
+ 5         + FT_perc -1  5.539724        61   39.16403 49.16403
+ 6 + Players_counter -1  3.394464        60   35.76957 47.7695d
+
+ miami-heat 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   80.94469 82.94469
+ 2             + assists -1 27.277409        80   53.66728 57.66728
+ 3              + steals -1  6.985707        79   46.68158 52.68158
+ 4    + FT_perc_relative -1  6.836621        78   39.84495 47.84495
+ 5          + shots_perc -1  3.843430        77   36.00152 46.00152
+ 6 + d_rebounds_relative -1  6.291455        76   29.71007 41.7100d
+
+ miami-heat 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  105.28823 107.28823
+ 2          + shots_perc -1 19.895855        80   85.39237  89.39237
+ 3 + o_rebounds_relative -1  7.823100        79   77.56927  83.56927
+ 4 + d_rebounds_relative -1  7.045647        78   70.52363  78.52363
+ 5           + turnovers -1  6.909550        77   63.61408  73.61408
+ 6              + steals -1  3.947796        76   59.66628  71.6662d
+
+ miami-heat 2014/2015
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        80  111.68415 113.68415
+ 2         + d_rebounds -1 25.026786        79   86.65736  90.65736
+ 3         + points_std -1 23.444012        78   63.21335  69.21335
+ 4   + assists_relative -1 11.430447        77   51.78291  59.78291
+ 5          + turnovers -1  3.578332        76   48.20457  58.20457
+ 6 + three_points_shots -1  3.633121        75   44.57145  56.5714d
+
+ miami-heat 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  111.27414 113.27414
+ 2           + turnovers -1 12.972640        80   98.30150 102.30150
+ 3          + shots_perc -1 10.208050        79   88.09345  94.09345
+ 4 + d_rebounds_relative -1 18.435024        78   69.65843  77.65843
+ 5              + steals -1 12.423192        77   57.23524  67.23524
+ 6            + FT_shots -1  5.278594        76   51.95664  63.9566d
+
+ orlando-magic 2011/2012
+                          Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                             NA        NA        65   90.52334 92.52334
+ 2          + assists_relative -1 32.585611        64   57.93773 61.93773
+ 3       + d_rebounds_relative -1 11.073301        63   46.86443 52.86443
+ 4         + FT_shots_relative -1  7.929288        62   38.93514 46.93514
+ 5               + minutes_std -1  6.336724        61   32.59842 42.59842
+ 6 + three_shots_perc_relative -1  5.606954        60   26.99146 38.9914d
+
+ orlando-magic 2012/2013
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        81   91.10800 93.10800
+ 2          + assists -1 19.010700        80   72.09730 76.09730
+ 3 + three_shots_perc -1  9.501711        79   62.59559 68.59559
+ 4      + minutes_std -1  9.476583        78   53.11901 61.11901
+ 5       + d_rebounds -1  7.665445        77   45.45356 55.45356
+ 6        + turnovers -1  5.985357        76   39.46821 51.4682d
+
+ orlando-magic 2013/2014
+                    Step Df Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA       NA        80   96.65664 98.65664
+ 2          + d_rebounds -1 24.00010        79   72.65654 76.65654
+ 3          + shots_perc -1 11.19061        78   61.46593 67.46593
+ 4               + fouls -1 16.40362        77   45.06231 53.06231
+ 5 + o_rebounds_relative -1 19.07396        76   25.98835 35.98835
+ 6              + steals -1  9.60114        75   16.38721 28.3872d
+
+ orlando-magic 2014/2015
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  100.85032 102.85032
+ 2          + shots_perc -1 19.031975        80   81.81835  85.81835
+ 3          + d_rebounds -1 10.627675        79   71.19067  77.19067
+ 4            + FT_shots -1  5.728662        78   65.46201  73.46201
+ 5     + Players_counter -1  6.403407        77   59.05860  69.05860
+ 6 + o_rebounds_relative -1  7.266309        76   51.79229  63.7922d
+
+ orlando-magic 2015/2016
+               Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                  NA        NA        81  111.91372 113.91372
+ 2     + shots_perc -1 13.077925        80   98.83579 102.83579
+ 3     + d_rebounds -1  9.391699        79   89.44409  95.44409
+ 4     + o_rebounds -1 10.055588        78   79.38851  87.38851
+ 5      + turnovers -1  5.087506        77   74.30100  84.30100
+ 6 + shots_relative -1  7.462520        76   66.83848  78.8384d
+
+ washington-wizards 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        64   80.24143 82.24143
+ 2          + d_rebounds -1 21.751910        63   58.48952 62.48952
+ 3 + shots_perc_relative -1  9.854476        62   48.63504 54.63504
+ 4              + steals -1  6.961426        61   41.67362 49.67362
+ 5           + turnovers -1  4.021267        60   37.65235 47.65235
+ 6          + o_rebounds -1  3.110833        59   34.54152 46.5415d
+
+ washington-wizards 2012/2013
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        81  106.54786 108.54786
+ 2                + shots_perc -1 25.815044        80   80.73281  84.73281
+ 3                + d_rebounds -1 12.353687        79   68.37912  74.37912
+ 4        + turnovers_relative -1 13.187673        78   55.19145  63.19145
+ 5 + three_shots_perc_relative -1  7.392976        77   47.79848  57.79848
+ 6                  + FT_shots -1  2.973003        76   44.82547  56.8254d
+
+ washington-wizards 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.23672 115.23672
+ 2 + shots_perc_relative -1 22.353375        80   90.88335  94.88335
+ 3          + d_rebounds -1 11.680703        79   79.20264  85.20264
+ 4    + three_shots_perc -1  6.774939        78   72.42770  80.42770
+ 5           + turnovers -1  6.022167        77   66.40554  76.40554
+ 6             + FT_perc -1  4.416207        76   61.98933  73.9893d
+
+ washington-wizards 2014/2015
+                            Step Df  Deviance Resid. Df Resid. Dev
+ 1                               NA        NA        81  112.45358
+ 2                  + shots_perc -1 44.714625        80   67.73896
+ 3                  + d_rebounds -1 10.123099        79   57.61586
+ 4                      + steals -1  8.992747        78   48.62311
+ 5            + assists_relative -1  3.745196        77   44.87792
+ 6 + three_points_shots_relative -1  2.450840        76   42.42708
+         AIC
+ 1 114.45358
+ 2  71.73896
+ 3  63.61586
+ 4  56.62311
+ 5  54.87792
+ 6  54.4270d
+
+ washington-wizards 2015/2016
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  113.67614 115.67614
+ 2 + shots_perc -1 34.445925        80   79.23021  83.23021
+ 3     + blocks -1 11.460933        79   67.76928  73.76928
+ 4 + d_rebounds -1  5.879351        78   61.88993  69.88993
+ 5   + FT_shots -1  3.401587        77   58.48834  68.48834
+ 6    + assists -1  3.626018        76   54.86232  66.8623d
+
+ denver-nuggets 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   89.97443 91.97443
+ 2    + assists -1 17.017140        64   72.95729 76.95729
+ 3 + d_rebounds -1 10.823829        63   62.13346 68.13346
+ 4 + shots_perc -1  6.776032        62   55.35742 63.35742
+ 5   + FT_shots -1  6.702163        61   48.65526 58.65526
+ 6  + turnovers -1  9.802765        60   38.85250 50.8525d
+
+ denver-nuggets 2012/2013
+                Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                   NA        NA        81  100.85032 102.85032
+ 2         + assists -1 12.281655        80   88.56867  92.56867
+ 3        + FT_shots -1  7.751724        79   80.81694  86.81694
+ 4      + d_rebounds -1  3.568383        78   77.24856  85.24856
+ 5 + steals_relative -1  4.616378        77   72.63218  82.63218
+ 6           + fouls -1  3.241706        76   69.39047  81.3904d
+
+ denver-nuggets 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  112.45358 114.45358
+ 2          + shots_perc -1 24.259682        80   88.19390  92.19390
+ 3          + d_rebounds -1 12.428135        79   75.76577  81.76577
+ 4      + fouls_relative -1 10.303056        78   65.46271  73.46271
+ 5 + o_rebounds_relative -1  6.309451        77   59.15326  69.15326
+ 6             + FT_perc -1  6.323261        76   52.83000  64.8300d
+
+ denver-nuggets 2014/2015
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  107.70077 109.70077
+ 2 + shots_perc -1 25.353693        80   82.34707  86.34707
+ 3 + d_rebounds -1 23.947351        79   58.39972  64.39972
+ 4 + points_std -1  3.177497        78   55.22223  63.22223
+ 5    + assists -1  3.164567        77   52.05766  62.05766
+ 6      + fouls -1  4.544140        76   47.51352  59.5135d
+
+ denver-nuggets 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  110.53407 112.53407
+ 2    + three_shots_perc -1 21.504737        80   89.02933  93.02933
+ 3 + d_rebounds_relative -1 15.492050        79   73.53728  79.53728
+ 4 + shots_perc_relative -1 10.059425        78   63.47786  71.47786
+ 5           + turnovers -1  6.751026        77   56.72683  66.72683
+ 6            + FT_shots -1  5.290081        76   51.43675  63.4367d
+
+ minnesota-timberwolves 2011/2012
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        65   88.50305 90.50305
+ 2    + three_shots_perc -1 12.332460        64   76.17059 80.17059
+ 3               + fouls -1  9.573442        63   66.59715 72.59715
+ 4 + d_rebounds_relative -1  4.842026        62   61.75512 69.75512
+ 5           + turnovers -1  8.716823        61   53.03830 63.03830
+ 6          + shots_perc -1  4.542529        60   48.49577 60.4957d
+
+ minnesota-timberwolves 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  108.74854 110.74854
+ 2 + shots_perc_relative -1 22.503702        80   86.24483  90.24483
+ 3          + d_rebounds -1 19.722813        79   66.52202  72.52202
+ 4   + FT_shots_relative -1  9.170111        78   57.35191  65.35191
+ 5               + fouls -1  6.778821        77   50.57309  60.57309
+ 6              + steals -1  4.157801        76   46.41529  58.4152d
+
+ minnesota-timberwolves 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.62735 115.62735
+ 2 + shots_perc_relative -1 27.475208        80   86.15214  90.15214
+ 3          + d_rebounds -1 11.430292        79   74.72185  80.72185
+ 4           + turnovers -1 11.010930        78   63.71092  71.71092
+ 5     + steals_relative -1 12.035533        77   51.67539  61.67539
+ 6            + FT_shots -1  5.312747        76   46.36264  58.3626d
+
+ minnesota-timberwolves 2014/2015
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        81   80.94469 82.94469
+ 2       + shots_perc -1 13.135311        80   67.80938 71.80938
+ 3       + d_rebounds -1 11.136227        79   56.67315 62.67315
+ 4           + steals -1 14.549900        78   42.12325 50.12325
+ 5      + minutes_std -1  8.771036        77   33.35222 43.35222
+ 6 + FT_perc_relative -1  5.571735        76   27.78048 39.7804d
+
+ minnesota-timberwolves 2015/2016
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  106.54786 108.54786
+ 2         + shots_perc -1 15.436493        80   91.11136  95.11136
+ 3         + d_rebounds -1 18.104085        79   73.00728  79.00728
+ 4           + FT_shots -1  4.777690        78   68.22959  76.22959
+ 5 + three_points_shots -1  2.927068        77   65.30252  75.30252
+ 6          + turnovers -1  3.667178        76   61.63534  73.6353d
+
+ oklahoma-city-thunder 2011/2012
+                 Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                    NA        NA        65   79.23187 81.23187
+ 2       + shots_perc -1 10.165066        64   69.06680 73.06680
+ 3         + FT_shots -1  8.992113        63   60.07469 66.07469
+ 4            + fouls -1  8.135247        62   51.93944 59.93944
+ 5 + FT_perc_relative -1  9.538882        61   42.40056 52.40056
+ 6       + d_rebounds -1  9.023745        60   33.37682 45.3768d
+
+ oklahoma-city-thunder 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   95.37474 97.37474
+ 2     + Players_counter -1 11.764651        80   83.61009 87.61009
+ 3    + three_shots_perc -1  6.023456        79   77.58663 83.58663
+ 4 + d_rebounds_relative -1  7.499173        78   70.08746 78.08746
+ 5              + steals -1  7.685529        77   62.40193 72.40193
+ 6  + turnovers_relative -1 11.045978        76   51.35595 63.3559d
+
+ oklahoma-city-thunder 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1                       NA        NA        81   97.31980 99.31980
+ 2          + shots_perc -1 14.016079        80   83.30373 87.30373
+ 3 + d_rebounds_relative -1 13.177464        79   70.12626 76.12626
+ 4           + turnovers -1  5.612712        78   64.51355 72.51355
+ 5              + steals -1  6.617942        77   57.89561 67.89561
+ 6              + blocks -1  7.124559        76   50.77105 62.7710d
+
+ oklahoma-city-thunder 2014/2015
+               Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                  NA        NA        81  112.89441 114.89441
+ 2     + shots_perc -1 23.027071        80   89.86734  93.86734
+ 3     + o_rebounds -1  7.456790        79   82.41055  88.41055
+ 4         + blocks -1 12.067443        78   70.34310  78.34310
+ 5        + FT_perc -1  5.212467        77   65.13064  75.13064
+ 6 + fouls_relative -1  4.119600        76   61.01104  73.0110d
+
+ oklahoma-city-thunder 2015/2016
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  103.92012 105.92012
+ 2 + shots_perc -1 22.494600        80   81.42552  85.42552
+ 3 + d_rebounds -1  6.739165        79   74.68635  80.68635
+ 4  + turnovers -1  9.011291        78   65.67506  73.67506
+ 5     + steals -1  8.297385        77   57.37767  67.37767
+ 6 + points_std -1  6.961690        76   50.41598  62.4159d
+
+ portland-trail-blazers 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   89.97443 91.97443
+ 2 + d_rebounds -1 24.086693        64   65.88773 69.88773
+ 3  + turnovers -1 13.264208        63   52.62352 58.62352
+ 4 + shots_perc -1  7.752172        62   44.87135 52.87135
+ 5   + FT_shots -1  3.484063        61   41.38729 51.38729
+ 6    + assists -1  6.832999        60   34.55429 46.5542d
+
+ portland-trail-blazers 2012/2013
+           Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1              NA        NA        81  110.53407 112.53407
+ 2 + shots_perc -1 20.371790        80   90.16228  94.16228
+ 3 + d_rebounds -1  9.722853        79   80.43943  86.43943
+ 4 + o_rebounds -1  6.112971        78   74.32645  82.32645
+ 5     + steals -1  4.579910        77   69.74654  79.74654
+ 6  + turnovers -1  3.405093        76   66.34145  78.3414d
+
+ portland-trail-blazers 2013/2014
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        81  105.28823 107.28823
+ 2                + shots_perc -1 15.140280        80   90.14795  94.14795
+ 3                + d_rebounds -1  8.093824        79   82.05412  88.05412
+ 4                 + turnovers -1 11.494014        78   70.56011  78.56011
+ 5           + steals_relative -1  7.250107        77   63.31000  73.31000
+ 6 + three_shots_perc_relative -1  6.072710        76   57.23729  69.2372d
+
+ portland-trail-blazers 2014/2015
+                   Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                      NA        NA        81  108.74854 110.74854
+ 2         + d_rebounds -1 16.781641        80   91.96689  95.96689
+ 3         + shots_perc -1  7.547547        79   84.41935  90.41935
+ 4  + FT_shots_relative -1  7.717591        78   76.70176  84.70176
+ 5 + turnovers_relative -1  8.186803        77   68.51495  78.51495
+ 6    + steals_relative -1  5.869630        76   62.64532  74.6453d
+
+ portland-trail-blazers 2015/2016
+            Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1               NA        NA        81  113.23672 115.23672
+ 2  + shots_perc -1 22.116716        80   91.12000  95.12000
+ 3  + d_rebounds -1 17.867974        79   73.25203  79.25203
+ 4      + steals -1 17.313081        78   55.93895  63.93895
+ 5 + minutes_std -1  6.108110        77   49.83084  59.83084
+ 6  + o_rebounds -1  9.296836        76   40.53400  52.5340d
+
+ utah-jazz 2011/2012
+           Step Df  Deviance Resid. Df Resid. Dev      AIC
+ 1              NA        NA        65   90.94922 92.94922
+ 2 + shots_perc -1 11.647994        64   79.30123 83.30123
+ 3 + d_rebounds -1  9.364610        63   69.93662 75.93662
+ 4 + o_rebounds -1  5.106168        62   64.83045 72.83045
+ 5      + fouls -1  7.104883        61   57.72556 67.72556
+ 6  + turnovers -1  2.490838        60   55.23473 67.2347d
+
+ utah-jazz 2012/2013
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.48094 115.48094
+ 2          + shots_perc -1 21.611518        80   91.86942  95.86942
+ 3 + d_rebounds_relative -1  9.722383        79   82.14704  88.14704
+ 4  + turnovers_relative -1  7.200924        78   74.94611  82.94611
+ 5            + FT_shots -1  4.929567        77   70.01655  80.01655
+ 6              + steals -1  5.049750        76   64.96680  76.9668d
+
+ utah-jazz 2013/2014
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  100.85032 102.85032
+ 2    + three_shots_perc -1 15.034522        80   85.81580  89.81580
+ 3 + d_rebounds_relative -1 11.206439        79   74.60936  80.60936
+ 4          + shots_perc -1  8.043184        78   66.56618  74.56618
+ 5     + steals_relative -1  6.461311        77   60.10487  70.10487
+ 6  + three_points_shots -1  6.740568        76   53.36430  65.3643d
+
+ utah-jazz 2014/2015
+                          Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                             NA        NA        81  113.23672 115.23672
+ 2                + d_rebounds -1 18.766227        80   94.47049  98.47049
+ 3       + shots_perc_relative -1  9.985228        79   84.48527  90.48527
+ 4                    + steals -1  8.264721        78   76.22054  84.22054
+ 5        + turnovers_relative -1  3.584352        77   72.63619  82.63619
+ 6 + three_shots_perc_relative -1  6.638139        76   65.99805  77.9980d
+
+ utah-jazz 2015/2016
+                    Step Df  Deviance Resid. Df Resid. Dev       AIC
+ 1                       NA        NA        81  113.62735 115.62735
+ 2 + d_rebounds_relative -1 25.096026        80   88.53133  92.53133
+ 3 + shots_perc_relative -1 20.234226        79   68.29710  74.29710
+ 4              + blocks -1  6.760205        78   61.53690  69.53690
+ 5              + steals -1  5.194191        77   56.34270  66.34270
+ 6             + FT_perc -1  4.256582        76   52.08612  64.08612
